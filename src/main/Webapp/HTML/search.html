@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>search page - Pokedex Viewer</title>
+    <script src="../JS/search.js"></script>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="bar">
+            <button id="home" name="home" class="bar-item" onclick="location.href='/IPASS/src/main/Webapp/index.html'" type="button">Home</button>
+            <button id="search-btn" name="search-btn" class="bar-item highlightButton" onclick="window.location.reload();" type="button">Search</button>
+            <button id="delete-btn" name="search-btn" class="bar-item logoutButton">Delete</button>
+        </div>
+    </div>
+    <div id="header" style="padding:50px 16px">
+        <h1 class="jumbo" id="header-text">Search page</h1>
+        <h5 class="boldy" id="below-header-text" style="text-align: center;">here we can search up detailed information on specific pokemon</h5>
+    </div>
+    <div class="form">
+        <form id="searchForm" name="searchForm" method="post" style="/*noinspection CssInvalidPropertyValue*/margin: 55px 80px;">
+            <h1 class="jumbo" id="box-text"> </h1>
+            <label>
+                <input class="pokename" type="text" name="pokename" placeholder="Fill in the desired pokemon name !">
+            </label>
+            <input id="generate-pokemon" name="generate-pokemon" type="button" value="Generate Pokemon">
+        </form>
+    </div>
+    <div class="pokemon-search">
+        <div id="container">
+            <div id="search-container" class="search-container border" style="padding:50px 16px">
+                <h3>pokemon information will appear in this section after the specified pokemon name had been filled in and the Generate pokemon button is pressed</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,372 @@
+html, body, span, h1, h2, h3, h4, h5, h6, p, form, label, footer, header, menu, nav{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    max-width: 86%;
+}
+
+body {
+    background: #b4b3b3;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, .descriptionMarble{
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+.descriptionMarble{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.selectLabel{
+    font-size: 1em;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 100;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+.knikker {
+    padding: 3em 0 1em;
+}
+
+.pokemon-dex {
+    width: 65%;
+    margin: auto auto auto;
+    background: rgba(0, 0, 0, 0.18);
+    background-size: cover;
+}
+.pokemon-search {
+    width: 30%;
+    margin: auto auto auto;
+    background: rgba(0, 0, 0, 0.18);
+    background-size: cover;
+}
+
+.knikker-top {
+    padding: 3em;
+}
+
+input[type="text"]{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    width: 95%;
+    display: block;
+    padding: 0.8em;
+    border: solid 5px rgba(51, 189, 69, 0.925);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    font-family: 'Roboto', sans-serif;
+}
+
+input{
+    margin: 2em 0;
+}
+
+.text:focus, .text:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+}
+
+input[type="submit"], input[type="button"] {
+    font-size: .9em;
+    color: #fff;
+    background: #76b852;
+    outline: none;
+    border: 1px solid #76b852;
+    cursor: pointer;
+    padding: 0.9em;
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 2em 0;
+    letter-spacing: 4px;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all;
+    background: #8DC26F;
+}
+
+.knikker-top p {
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.knikker-top p a {
+    color: #fff;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    transition: .5s all;
+    font-weight: 400;
+}
+
+.knikker-top p a:hover {
+    color: #76b852;
+}
+.navbar{
+    position:fixed;
+    width:100%;
+    z-index:1;
+    top:0
+}
+
+.bar{
+    width:100%;
+    overflow:hidden;
+    color: #fff;
+    background-color:#69a04b
+}
+.bar{
+    display:inline-block;
+    width:auto
+}
+.bar .bar-item {
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0
+}
+.bar{
+    position:static;
+    float:left
+}
+.bar-item{
+    font-weight: 900;
+    white-space:normal;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+    text-align:center;
+    width:100%;
+}
+.bar-item{
+    color:rgb(95, 91, 91);
+}
+.search-item{
+    color:#000;
+    background-color: rgb(57, 102, 83)
+}
+.bar-item:hover, .search-item:hover{
+    color:#000;
+    background-color:rgba(43, 61, 57, 0.719)
+}
+.highlightButton, .logoutButton{
+    font-weight: 900;
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+    text-align:center;
+    width:100%;
+    overflow:hidden;
+    color: #3b5c2a;
+    background-color: rgb(148, 145, 145)
+}
+.highlightButton:active, .globalButton:active, .logoutButton:active, .bar-item:active, .search-item:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.logoutButton{
+    color: #021926;
+    background-color: #e95454
+}
+.header{
+    padding:0.01em 16px;
+    text-align:center;
+}
+.jumbo {
+    font-size:64px
+}
+.large {
+    font-size:45px
+}
+.boldy {
+    font-size:35px
+}
+
+.middleContent{
+    padding-top:64px;
+    padding-bottom:64px;
+    margin-left:auto;
+    margin-right:15%;
+    max-width:980px;
+}
+.middleContent:after{
+    content:"";
+    display:table;
+    clear:both
+}
+.textContent{padding:0 8px;
+    float:left;
+    width:67%
+}
+.topText{
+    padding-top:32px;
+    padding-bottom:32px
+}
+.bottomText{
+    color:#757575
+}
+.bottomText:hover{
+    transform: scale(1.5);
+    color: #0000ff
+}
+.highlightButton:hover{
+    color:#000;
+    background-color: #216b42
+}
+.logoutButton:hover{
+    color: #ffffff;
+    background-color: #000000
+}
+.loginButton{
+    color: #76b852;
+    background-color: #216b42
+}
+.loginButton:hover{
+    color: #b10c9b;
+    background-color: #518036;
+}
+.form {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    }
+
+#poke-container {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Nothing-Left GlobalDexButton Nothing-Right"
+      ". . ."
+      ". . .";
+  }
+  .GlobalDexButton { grid-area: Button; }
+  .Nothing-Right { grid-area: Nothing-Right; }
+  .Nothing-Left { grid-area: Nothing-Left; }
+
+  #search-container {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+  }
+  .container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+  }
+
+  .search-container p {
+    font-weight: bold;
+    width: 90%;
+
+  }
+
+  .search-container ul {
+    width: 90%;
+    padding: 10px;
+  }
+
+#delete-btn {
+    position: absolute;
+    left: 85%;
+    display: none;
+    margin-bottom: 5%;
+}
+.generate-all-pokemon{
+    margin: 0 auto;
+}
+
+.globalButton {
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0;
+    grid-area: Button;
+    margin: 0 auto;
+}
+
+.globalButton{
+    margin: 0 auto;
+    font-weight: 900;
+    white-space:normal;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+    text-align:center;
+    width:100%;
+    grid-area: Button;
+}
+
+.globalButton{
+    color:rgb(95, 91, 91);
+    grid-area: Button;
+    margin: 0 auto;
+}
+
+.border {
+    margin: auto;
+    width: 5%;
+    border: 5px solid #000000;
+    padding: 10px;
+    }
+
+.globalButton:hover{
+    margin: 0 auto;
+    color:#000;
+    background-color:rgba(43, 61, 57, 0.719);
+    grid-area: Button;
+}

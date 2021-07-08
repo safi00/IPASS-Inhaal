@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon Experiment</title>
+    <script src="JS/index.js"></script>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="bar">
+            <button id="home"   name="home"   class="bar-item highlightButton" onclick="window.location.reload();" type="button">Home</button>
+            <button id="kanto"  name="kanto"  class="bar-item">Kanto</button >
+            <button id="johto"  name="johto"  class="bar-item">Johto</button >
+            <button id="hoenn"  name="hoenn"  class="bar-item">Hoenn</button >
+            <button id="sinnoh" name="sinnoh" class="bar-item">Sinnoh</button>
+            <button id="unova"  name="unova"  class="bar-item">Unova</button >
+            <button id="kalos"  name="kalos"  class="bar-item">Kalos</button >
+            <button id="alola"  name="alola"  class="bar-item">Alola</button >
+            <button id="galar"  name="galar"  class="bar-item">Galar</button>
+            <button id="search-btn" name="search-btn" class="bar-item search-item" onclick="location.href='/IPASS/src/main/Webapp/HTML/search.html'" type="button">Search</button>
+            <button id="delete-btn" name="search-btn" class="bar-item logoutButton">Delete</button>
+        </div>
+    </div>
+    <div id="header" style="padding:50px 16px">
+        <h1 class="jumbo" id="header-text">Pokemon</h1>
+    </div>
+    <div class="pokemon-dex">
+        <div id="container">
+            <div id="poke-container" class="ui cards">
+                <div class="Button">
+                    <button id="generate-all-pokemon" name="generate-all-pokemon" class="globalButton">Generate Pokemon</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

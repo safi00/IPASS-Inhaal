@@ -1,0 +1,37 @@
+.globalButton {
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0
+}
+
+.globalButton{
+    font-weight: 900;
+    white-space:normal;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+    text-align:center;
+    width:100%;
+}
+
+.globalButton{
+    color:rgb(95, 91, 91);
+}
+
+.globalButton:hover{
+    color:#000;
+    background-color:rgba(43, 61, 57, 0.719)
+}
+
+.highlightButton:active, .logoutButton:active, .globalButton:active, .search-item:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
