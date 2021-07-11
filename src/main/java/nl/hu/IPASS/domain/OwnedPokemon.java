@@ -11,16 +11,20 @@ public class OwnedPokemon {
     private User owner;
     @ManyToOne(fetch = FetchType.EAGER)
     private Pokemon pokemon;
-    private boolean isFav;
+    private boolean isFavourite;
 
     public OwnedPokemon(User owner, Pokemon pokemon) {
         this.owner = owner;
         this.pokemon = pokemon;
-        this.isFav = false;
+        this.isFavourite = false;
     }
 
     public OwnedPokemon() {
 
+    }
+
+    public int getId() {
+        return id;
     }
 
     public User getOwner() {
@@ -31,20 +35,16 @@ public class OwnedPokemon {
         return pokemon;
     }
 
-    public boolean isFav() {
-        return isFav;
+    public boolean isFavourite() {
+        return isFavourite;
     }
 
-    public void setFav(Boolean bol) {
-        this.isFav = bol;
-    }
-
-    public int getId() {
-        return id;
+    public void setFavourite(Boolean bol) {
+        this.isFavourite = bol;
     }
 
     @Override
     public String toString() {
-        return pokemon.getName() + " is owned by " +  owner.getName() + " fav : " + isFav;
+        return pokemon.getName() + " is owned by " +  owner.getName() + " fav : " + isFavourite;
     }
 }

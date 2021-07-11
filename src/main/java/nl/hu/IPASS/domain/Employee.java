@@ -29,7 +29,6 @@ public class Employee extends Account{
         return employeeType;
     }
 
-
     public String getEmployeeDetails(){
         return "#" + getId() + " account type:" + getAccountType() + " by user " + getUsername() + " can be contacted by " + getEmail()
                 + " name : " + getName() + " employee Type : " + getEmployeeType();

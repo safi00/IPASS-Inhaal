@@ -31,12 +31,10 @@ public class UserDAOHibernate implements UserDAO {
 
     @Override
     public List<User> getAllUsers() {
-
         Session session = sessionFactory.openSession();
         //noinspection unchecked
         List<User> users = session.createQuery("from users").list();
         session.close();
-
         return users;
     }
 }

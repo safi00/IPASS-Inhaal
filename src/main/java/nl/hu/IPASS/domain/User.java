@@ -90,14 +90,14 @@ public class User extends Account{
     public void addPokemonToFav(Pokemon pokemon) {
         if (collectionContainsPokemon(pokemon)){
             OwnedPokemon pokemonIndex = returnOwnedPokemon(pokemon);
-            pokemonIndex.setFav(true);
+            pokemonIndex.setFavourite(true);
         }
     }
 
     public void removePokemonFromFav(Pokemon pokemon) {
         if (collectionContainsPokemon(pokemon)){
             OwnedPokemon pokemonIndex = returnOwnedPokemon(pokemon);
-            pokemonIndex.setFav(false);
+            pokemonIndex.setFavourite(false);
         }
     }
 
@@ -132,7 +132,7 @@ public class User extends Account{
     }
 
     public List<OwnedPokemon> getFavoritePokemon() {
-        return this.ownedPokemonList.stream().filter(OwnedPokemon::isFav).collect(Collectors.toList());
+        return this.ownedPokemonList.stream().filter(OwnedPokemon::isFavourite).collect(Collectors.toList());
     }
 
     public List<Pokemon> getPokemonList() {
