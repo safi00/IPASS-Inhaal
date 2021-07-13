@@ -1,7 +1,7 @@
 package nl.hu.IPASS.DAO;
 
-import nl.hu.IPASS.DAO.IDAO.EmployeeDAO;
-import nl.hu.IPASS.domain.Employee;
+import nl.hu.IPASS.DAO.IDAO.OwnedPokemonDAO;
+import nl.hu.IPASS.domain.OwnedPokemon;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -13,17 +13,17 @@ import javax.persistence.PersistenceException;
 import java.util.List;
 
 @Repository
-public class EmployeeDAOHibernate implements EmployeeDAO {
+public class OwnedPokemonDAOHibernate implements OwnedPokemonDAO {
     @Autowired
     private SessionFactory sessionFactory;
 
     @Override
-    public boolean save(@NotNull Employee employee) {
+    public boolean save(@NotNull OwnedPokemon pokeCol) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         //noinspection TryFinallyCanBeTryWithResources
         try {
-            session.save(employee);
+            session.save(pokeCol);
             transaction.commit();
             return true;
         } catch (PersistenceException exception) {
@@ -41,12 +41,12 @@ public class EmployeeDAOHibernate implements EmployeeDAO {
     }
 
     @Override
-    public boolean update(@NotNull Employee employee) {
+    public boolean update(@NotNull OwnedPokemon pokeCol) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         //noinspection TryFinallyCanBeTryWithResources
         try {
-            session.update(employee);
+            session.update(pokeCol);
             transaction.commit();
             return true;
         } catch (PersistenceException exception) {
@@ -64,12 +64,12 @@ public class EmployeeDAOHibernate implements EmployeeDAO {
     }
 
     @Override
-    public boolean delete(@NotNull Employee employee) {
+    public boolean delete(@NotNull OwnedPokemon pokeCol) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         //noinspection TryFinallyCanBeTryWithResources
         try {
-            session.delete(employee);
+            session.delete(pokeCol);
             transaction.commit();
             return true;
         } catch (PersistenceException exception) {
@@ -87,21 +87,36 @@ public class EmployeeDAOHibernate implements EmployeeDAO {
     }
 
     @Override
-    public Employee getEmployeeByUsername(String username) {
+    public OwnedPokemon getOwnedPokemonByUserNameAndPokemonName() {
         return null;
     }
 
     @Override
-    public Employee getEmployeeByID(int id) {
+    public OwnedPokemon getOwnedPokemonByUserIDAndPokeDexNumber() {
         return null;
     }
 
     @Override
-    public List<Employee> getAllEmployees() {
+    public List<OwnedPokemon> getAllOwnedPokemonByPokemonName(String pokemonName) {
+        return null;
+    }
+
+    @Override
+    public List<OwnedPokemon> getAllUserByUsername(String username) {
+        return null;
+    }
+
+    @Override
+    public List<OwnedPokemon> getAllUserByID(int id) {
+        return null;
+    }
+
+    @Override
+    public List<OwnedPokemon> getAllOwnedPokemon() {
         Session session = sessionFactory.openSession();
         //noinspection unchecked
-        List<Employee> employees = session.createQuery("from employee").list();
+        List<OwnedPokemon> ownedpokemon = session.createQuery("from ownedpokemon").list();
         session.close();
-        return employees;
+        return ownedpokemon;
     }
 }

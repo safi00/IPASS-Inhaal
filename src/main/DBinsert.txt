@@ -1,0 +1,6174 @@
+INSERT INTO pokemon (pokedexnumber, name, typing, abilities, rarity, generation, hashiddenability) VALUES
+(1, 'bulbasaur', '
+grass,
+poison,
+', '
+overgrow,
+chlorophyll,
+', 'common', 1 , 'true' ),
+(2, 'ivysaur', '
+grass,
+poison,
+', '
+overgrow,
+chlorophyll,
+', 'common', 1 , 'true' ),
+(3, 'venusaur', '
+grass,
+poison,
+', '
+overgrow,
+chlorophyll,
+', 'common', 1 , 'true' ),
+(4, 'charmander', '
+fire,
+', '
+blaze,
+solar-power,
+', 'common', 1 , 'true' ),
+(5, 'charmeleon', '
+fire,
+', '
+blaze,
+solar-power,
+', 'common', 1 , 'true' ),
+(6, 'charizard', '
+fire,
+flying,
+', '
+blaze,
+solar-power,
+', 'common', 1 , 'true' ),
+(7, 'squirtle', '
+water,
+', '
+torrent,
+rain-dish,
+', 'common', 1 , 'true' ),
+(8, 'wartortle', '
+water,
+', '
+torrent,
+rain-dish,
+', 'common', 1 , 'true' ),
+(9, 'blastoise', '
+water,
+', '
+torrent,
+rain-dish,
+', 'common', 1 , 'true' ),
+(10, 'caterpie', '
+bug,
+', '
+shield-dust,
+run-away,
+', 'common', 1 , 'true' ),
+(11, 'metapod', '
+bug,
+', '
+shed-skin,
+', 'common', 1 , 'true' ),
+(12, 'butterfree', '
+bug,
+flying,
+', '
+compound-eyes,
+tinted-lens,
+', 'common', 1 , 'true' ),
+(13, 'weedle', '
+bug,
+poison,
+', '
+shield-dust,
+run-away,
+', 'common', 1 , 'true' ),
+(14, 'kakuna', '
+bug,
+poison,
+', '
+shed-skin,
+', 'common', 1 , 'true' ),
+(15, 'beedrill', '
+bug,
+poison,
+', '
+swarm,
+sniper,
+', 'common', 1 , 'true' ),
+(16, 'pidgey', '
+normal,
+flying,
+', '
+keen-eye,
+tangled-feet,
+big-pecks,
+', 'common', 1 , 'true' ),
+(17, 'pidgeotto', '
+normal,
+flying,
+', '
+keen-eye,
+tangled-feet,
+big-pecks,
+', 'common', 1 , 'true' ),
+(18, 'pidgeot', '
+normal,
+flying,
+', '
+keen-eye,
+tangled-feet,
+big-pecks,
+', 'common', 1 , 'true' ),
+(19, 'rattata', '
+normal,
+', '
+run-away,
+guts,
+hustle,
+', 'common', 1 , 'true' ),
+(20, 'raticate', '
+normal,
+', '
+run-away,
+guts,
+hustle,
+', 'common', 1 , 'true' ),
+(21, 'spearow', '
+normal,
+flying,
+', '
+keen-eye,
+sniper,
+', 'common', 1 , 'true' ),
+(22, 'fearow', '
+normal,
+flying,
+', '
+keen-eye,
+sniper,
+', 'common', 1 , 'true' ),
+(23, 'ekans', '
+poison,
+', '
+intimidate,
+shed-skin,
+unnerve,
+', 'common', 1 , 'true' ),
+(24, 'arbok', '
+poison,
+', '
+intimidate,
+shed-skin,
+unnerve,
+', 'common', 1 , 'true' ),
+(25, 'pikachu', '
+electric,
+', '
+static,
+lightning-rod,
+', 'common', 1 , 'true' ),
+(26, 'raichu', '
+electric,
+', '
+static,
+lightning-rod,
+', 'common', 1 , 'true' ),
+(27, 'sandshrew', '
+ground,
+', '
+sand-veil,
+sand-rush,
+', 'common', 1 , 'true' ),
+(28, 'sandslash', '
+ground,
+', '
+sand-veil,
+sand-rush,
+', 'common', 1 , 'true' ),
+(29, 'nidoran-f', '
+poison,
+', '
+poison-point,
+rivalry,
+hustle,
+', 'common', 1 , 'true' ),
+(30, 'nidorina', '
+poison,
+', '
+poison-point,
+rivalry,
+hustle,
+', 'common', 1 , 'true' ),
+(31, 'nidoqueen', '
+poison,
+ground,
+', '
+poison-point,
+rivalry,
+sheer-force,
+', 'common', 1 , 'true' ),
+(32, 'nidoran-m', '
+poison,
+', '
+poison-point,
+rivalry,
+hustle,
+', 'common', 1 , 'true' ),
+(33, 'nidorino', '
+poison,
+', '
+poison-point,
+rivalry,
+hustle,
+', 'common', 1 , 'true' ),
+(34, 'nidoking', '
+poison,
+ground,
+', '
+poison-point,
+rivalry,
+sheer-force,
+', 'common', 1 , 'true' ),
+(35, 'clefairy', '
+fairy,
+', '
+cute-charm,
+magic-guard,
+friend-guard,
+', 'common', 1 , 'true' ),
+(36, 'clefable', '
+fairy,
+', '
+cute-charm,
+magic-guard,
+unaware,
+', 'common', 1 , 'true' ),
+(37, 'vulpix', '
+fire,
+', '
+flash-fire,
+drought,
+', 'common', 1 , 'true' ),
+(38, 'ninetales', '
+fire,
+', '
+flash-fire,
+drought,
+', 'common', 1 , 'true' ),
+(39, 'jigglypuff', '
+normal,
+fairy,
+', '
+cute-charm,
+competitive,
+friend-guard,
+', 'common', 1 , 'true' ),
+(40, 'wigglytuff', '
+normal,
+fairy,
+', '
+cute-charm,
+competitive,
+frisk,
+', 'common', 1 , 'true' ),
+(41, 'zubat', '
+poison,
+flying,
+', '
+inner-focus,
+infiltrator,
+', 'common', 1 , 'true' ),
+(42, 'golbat', '
+poison,
+flying,
+', '
+inner-focus,
+infiltrator,
+', 'common', 1 , 'true' ),
+(43, 'oddish', '
+grass,
+poison,
+', '
+chlorophyll,
+run-away,
+', 'common', 1 , 'true' ),
+(44, 'gloom', '
+grass,
+poison,
+', '
+chlorophyll,
+stench,
+', 'common', 1 , 'true' ),
+(45, 'vileplume', '
+grass,
+poison,
+', '
+chlorophyll,
+effect-spore,
+', 'common', 1 , 'true' ),
+(46, 'paras', '
+bug,
+grass,
+', '
+effect-spore,
+dry-skin,
+damp,
+', 'common', 1 , 'true' ),
+(47, 'parasect', '
+bug,
+grass,
+', '
+effect-spore,
+dry-skin,
+damp,
+', 'common', 1 , 'true' ),
+(48, 'venonat', '
+bug,
+poison,
+', '
+compound-eyes,
+tinted-lens,
+run-away,
+', 'common', 1 , 'true' ),
+(49, 'venomoth', '
+bug,
+poison,
+', '
+shield-dust,
+tinted-lens,
+wonder-skin,
+', 'common', 1 , 'true' ),
+(50, 'diglett', '
+ground,
+', '
+sand-veil,
+arena-trap,
+sand-force,
+', 'common', 1 , 'true' ),
+(51, 'dugtrio', '
+ground,
+', '
+sand-veil,
+arena-trap,
+sand-force,
+', 'common', 1 , 'true' ),
+(52, 'meowth', '
+normal,
+', '
+pickup,
+technician,
+unnerve,
+', 'common', 1 , 'true' ),
+(53, 'persian', '
+normal,
+', '
+limber,
+technician,
+unnerve,
+', 'common', 1 , 'true' ),
+(54, 'psyduck', '
+water,
+', '
+damp,
+cloud-nine,
+swift-swim,
+', 'common', 1 , 'true' ),
+(55, 'golduck', '
+water,
+', '
+damp,
+cloud-nine,
+swift-swim,
+', 'common', 1 , 'true' ),
+(56, 'mankey', '
+fighting,
+', '
+vital-spirit,
+anger-point,
+defiant,
+', 'common', 1 , 'true' ),
+(57, 'primeape', '
+fighting,
+', '
+vital-spirit,
+anger-point,
+defiant,
+', 'common', 1 , 'true' ),
+(58, 'growlithe', '
+fire,
+', '
+intimidate,
+flash-fire,
+justified,
+', 'common', 1 , 'true' ),
+(59, 'arcanine', '
+fire,
+', '
+intimidate,
+flash-fire,
+justified,
+', 'common', 1 , 'true' ),
+(60, 'poliwag', '
+water,
+', '
+water-absorb,
+damp,
+swift-swim,
+', 'common', 1 , 'true' ),
+(61, 'poliwhirl', '
+water,
+', '
+water-absorb,
+damp,
+swift-swim,
+', 'common', 1 , 'true' ),
+(62, 'poliwrath', '
+water,
+fighting,
+', '
+water-absorb,
+damp,
+swift-swim,
+', 'common', 1 , 'true' ),
+(63, 'abra', '
+psychic,
+', '
+synchronize,
+inner-focus,
+magic-guard,
+', 'common', 1 , 'true' ),
+(64, 'kadabra', '
+psychic,
+', '
+synchronize,
+inner-focus,
+magic-guard,
+', 'common', 1 , 'true' ),
+(65, 'alakazam', '
+psychic,
+', '
+synchronize,
+inner-focus,
+magic-guard,
+', 'common', 1 , 'true' ),
+(66, 'machop', '
+fighting,
+', '
+guts,
+no-guard,
+steadfast,
+', 'common', 1 , 'true' ),
+(67, 'machoke', '
+fighting,
+', '
+guts,
+no-guard,
+steadfast,
+', 'common', 1 , 'true' ),
+(68, 'machamp', '
+fighting,
+', '
+guts,
+no-guard,
+steadfast,
+', 'common', 1 , 'true' ),
+(69, 'bellsprout', '
+grass,
+poison,
+', '
+chlorophyll,
+gluttony,
+', 'common', 1 , 'true' ),
+(70, 'weepinbell', '
+grass,
+poison,
+', '
+chlorophyll,
+gluttony,
+', 'common', 1 , 'true' ),
+(71, 'victreebel', '
+grass,
+poison,
+', '
+chlorophyll,
+gluttony,
+', 'common', 1 , 'true' ),
+(72, 'tentacool', '
+water,
+poison,
+', '
+clear-body,
+liquid-ooze,
+rain-dish,
+', 'common', 1 , 'true' ),
+(129, 'magikarp', '
+water,
+', '
+swift-swim,
+rattled,
+', 'common', 1 , 'true' ),
+(132, 'ditto', '
+normal,
+', '
+limber,
+imposter,
+', 'common', 1 , 'true' ),
+(73, 'tentacruel', '
+water,
+poison,
+', '
+clear-body,
+liquid-ooze,
+rain-dish,
+', 'common', 1 , 'true' ),
+(74, 'geodude', '
+rock,
+ground,
+', '
+rock-head,
+sturdy,
+sand-veil,
+', 'common', 1 , 'true' ),
+(75, 'graveler', '
+rock,
+ground,
+', '
+rock-head,
+sturdy,
+sand-veil,
+', 'common', 1 , 'true' ),
+(76, 'golem', '
+rock,
+ground,
+', '
+rock-head,
+sturdy,
+sand-veil,
+', 'common', 1 , 'true' ),
+(77, 'ponyta', '
+fire,
+', '
+run-away,
+flash-fire,
+flame-body,
+', 'common', 1 , 'true' ),
+(78, 'rapidash', '
+fire,
+', '
+run-away,
+flash-fire,
+flame-body,
+', 'common', 1 , 'true' ),
+(79, 'slowpoke', '
+water,
+psychic,
+', '
+oblivious,
+own-tempo,
+regenerator,
+', 'common', 1 , 'true' ),
+(80, 'slowbro', '
+water,
+psychic,
+', '
+oblivious,
+own-tempo,
+regenerator,
+', 'common', 1 , 'true' ),
+(81, 'magnemite', '
+electric,
+steel,
+', '
+magnet-pull,
+sturdy,
+analytic,
+', 'common', 1 , 'true' ),
+(82, 'magneton', '
+electric,
+steel,
+', '
+magnet-pull,
+sturdy,
+analytic,
+', 'common', 1 , 'true' ),
+(83, 'farfetchd', '
+normal,
+flying,
+', '
+keen-eye,
+inner-focus,
+defiant,
+', 'common', 1 , 'true' ),
+(84, 'doduo', '
+normal,
+flying,
+', '
+run-away,
+early-bird,
+tangled-feet,
+', 'common', 1 , 'true' ),
+(85, 'dodrio', '
+normal,
+flying,
+', '
+run-away,
+early-bird,
+tangled-feet,
+', 'common', 1 , 'true' ),
+(86, 'seel', '
+water,
+', '
+thick-fat,
+hydration,
+ice-body,
+', 'common', 1 , 'true' ),
+(87, 'dewgong', '
+water,
+ice,
+', '
+thick-fat,
+hydration,
+ice-body,
+', 'common', 1 , 'true' ),
+(88, 'grimer', '
+poison,
+', '
+stench,
+sticky-hold,
+poison-touch,
+', 'common', 1 , 'true' ),
+(89, 'muk', '
+poison,
+', '
+stench,
+sticky-hold,
+poison-touch,
+', 'common', 1 , 'true' ),
+(90, 'shellder', '
+water,
+', '
+shell-armor,
+skill-link,
+overcoat,
+', 'common', 1 , 'true' ),
+(91, 'cloyster', '
+water,
+ice,
+', '
+shell-armor,
+skill-link,
+overcoat,
+', 'common', 1 , 'true' ),
+(92, 'gastly', '
+ghost,
+poison,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(201, 'unown', '
+psychic,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(202, 'wobbuffet', '
+psychic,
+', '
+shadow-tag,
+telepathy,
+', 'common', 1 , 'true' ),
+(93, 'haunter', '
+ghost,
+poison,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(94, 'gengar', '
+ghost,
+poison,
+', '
+cursed-body,
+', 'common', 1 , 'true' ),
+(235, 'smeargle', '
+normal,
+', '
+own-tempo,
+technician,
+moody,
+', 'common', 1 , 'true' ),
+(95, 'onix', '
+rock,
+ground,
+', '
+rock-head,
+sturdy,
+weak-armor,
+', 'common', 1 , 'true' ),
+(96, 'drowzee', '
+psychic,
+', '
+insomnia,
+forewarn,
+inner-focus,
+', 'common', 1 , 'true' ),
+(97, 'hypno', '
+psychic,
+', '
+insomnia,
+forewarn,
+inner-focus,
+', 'common', 1 , 'true' ),
+(98, 'krabby', '
+water,
+', '
+hyper-cutter,
+shell-armor,
+sheer-force,
+', 'common', 1 , 'true' ),
+(99, 'kingler', '
+water,
+', '
+hyper-cutter,
+shell-armor,
+sheer-force,
+', 'common', 1 , 'true' ),
+(100, 'voltorb', '
+electric,
+', '
+soundproof,
+static,
+aftermath,
+', 'common', 1 , 'true' ),
+(101, 'electrode', '
+electric,
+', '
+soundproof,
+static,
+aftermath,
+', 'common', 1 , 'true' ),
+(102, 'exeggcute', '
+grass,
+psychic,
+', '
+chlorophyll,
+harvest,
+', 'common', 1 , 'true' ),
+(103, 'exeggutor', '
+grass,
+psychic,
+', '
+chlorophyll,
+harvest,
+', 'common', 1 , 'true' ),
+(104, 'cubone', '
+ground,
+', '
+rock-head,
+lightning-rod,
+battle-armor,
+', 'common', 1 , 'true' ),
+(105, 'marowak', '
+ground,
+', '
+rock-head,
+lightning-rod,
+battle-armor,
+', 'common', 1 , 'true' ),
+(106, 'hitmonlee', '
+fighting,
+', '
+limber,
+reckless,
+unburden,
+', 'common', 1 , 'true' ),
+(107, 'hitmonchan', '
+fighting,
+', '
+keen-eye,
+iron-fist,
+inner-focus,
+', 'common', 1 , 'true' ),
+(108, 'lickitung', '
+normal,
+', '
+own-tempo,
+oblivious,
+cloud-nine,
+', 'common', 1 , 'true' ),
+(109, 'koffing', '
+poison,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(110, 'weezing', '
+poison,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(111, 'rhyhorn', '
+ground,
+rock,
+', '
+lightning-rod,
+rock-head,
+reckless,
+', 'common', 1 , 'true' ),
+(112, 'rhydon', '
+ground,
+rock,
+', '
+lightning-rod,
+rock-head,
+reckless,
+', 'common', 1 , 'true' ),
+(113, 'chansey', '
+normal,
+', '
+natural-cure,
+serene-grace,
+healer,
+', 'common', 1 , 'true' ),
+(114, 'tangela', '
+grass,
+', '
+chlorophyll,
+leaf-guard,
+regenerator,
+', 'common', 1 , 'true' ),
+(115, 'kangaskhan', '
+normal,
+', '
+early-bird,
+scrappy,
+inner-focus,
+', 'common', 1 , 'true' ),
+(116, 'horsea', '
+water,
+', '
+swift-swim,
+sniper,
+damp,
+', 'common', 1 , 'true' ),
+(117, 'seadra', '
+water,
+', '
+poison-point,
+sniper,
+damp,
+', 'common', 1 , 'true' ),
+(118, 'goldeen', '
+water,
+', '
+swift-swim,
+water-veil,
+lightning-rod,
+', 'common', 1 , 'true' ),
+(119, 'seaking', '
+water,
+', '
+swift-swim,
+water-veil,
+lightning-rod,
+', 'common', 1 , 'true' ),
+(120, 'staryu', '
+water,
+', '
+illuminate,
+natural-cure,
+analytic,
+', 'common', 1 , 'true' ),
+(121, 'starmie', '
+water,
+psychic,
+', '
+illuminate,
+natural-cure,
+analytic,
+', 'common', 1 , 'true' ),
+(122, 'mr-mime', '
+psychic,
+fairy,
+', '
+soundproof,
+filter,
+technician,
+', 'common', 1 , 'true' ),
+(123, 'scyther', '
+bug,
+flying,
+', '
+swarm,
+technician,
+steadfast,
+', 'common', 1 , 'true' ),
+(124, 'jynx', '
+ice,
+psychic,
+', '
+oblivious,
+forewarn,
+dry-skin,
+', 'common', 1 , 'true' ),
+(125, 'electabuzz', '
+electric,
+', '
+static,
+vital-spirit,
+', 'common', 1 , 'true' ),
+(126, 'magmar', '
+fire,
+', '
+flame-body,
+vital-spirit,
+', 'common', 1 , 'true' ),
+(127, 'pinsir', '
+bug,
+', '
+hyper-cutter,
+mold-breaker,
+moxie,
+', 'common', 1 , 'true' ),
+(128, 'tauros', '
+normal,
+', '
+intimidate,
+anger-point,
+sheer-force,
+', 'common', 1 , 'true' ),
+(130, 'gyarados', '
+water,
+flying,
+', '
+intimidate,
+moxie,
+', 'common', 1 , 'true' ),
+(131, 'lapras', '
+water,
+ice,
+', '
+water-absorb,
+shell-armor,
+hydration,
+', 'common', 1 , 'true' ),
+(265, 'wurmple', '
+bug,
+', '
+shield-dust,
+run-away,
+', 'common', 1 , 'true' ),
+(266, 'silcoon', '
+bug,
+', '
+shed-skin,
+', 'common', 1 , 'true' ),
+(268, 'cascoon', '
+bug,
+', '
+shed-skin,
+', 'common', 1 , 'true' ),
+(133, 'eevee', '
+normal,
+', '
+run-away,
+adaptability,
+anticipation,
+', 'common', 1 , 'true' ),
+(134, 'vaporeon', '
+water,
+', '
+water-absorb,
+hydration,
+', 'common', 1 , 'true' ),
+(135, 'jolteon', '
+electric,
+', '
+volt-absorb,
+quick-feet,
+', 'common', 1 , 'true' ),
+(136, 'flareon', '
+fire,
+', '
+flash-fire,
+guts,
+', 'common', 1 , 'true' ),
+(137, 'porygon', '
+normal,
+', '
+trace,
+download,
+analytic,
+', 'common', 1 , 'true' ),
+(138, 'omanyte', '
+rock,
+water,
+', '
+swift-swim,
+shell-armor,
+weak-armor,
+', 'common', 1 , 'true' ),
+(139, 'omastar', '
+rock,
+water,
+', '
+swift-swim,
+shell-armor,
+weak-armor,
+', 'common', 1 , 'true' ),
+(140, 'kabuto', '
+rock,
+water,
+', '
+swift-swim,
+battle-armor,
+weak-armor,
+', 'common', 1 , 'true' ),
+(141, 'kabutops', '
+rock,
+water,
+', '
+swift-swim,
+battle-armor,
+weak-armor,
+', 'common', 1 , 'true' ),
+(142, 'aerodactyl', '
+rock,
+flying,
+', '
+rock-head,
+pressure,
+unnerve,
+', 'common', 1 , 'true' ),
+(143, 'snorlax', '
+normal,
+', '
+immunity,
+thick-fat,
+gluttony,
+', 'common', 1 , 'true' ),
+(144, 'articuno', '
+ice,
+flying,
+', '
+pressure,
+snow-cloak,
+', 'common', 1 , 'true' ),
+(145, 'zapdos', '
+electric,
+flying,
+', '
+pressure,
+static,
+', 'common', 1 , 'true' ),
+(146, 'moltres', '
+fire,
+flying,
+', '
+pressure,
+flame-body,
+', 'common', 1 , 'true' ),
+(147, 'dratini', '
+dragon,
+', '
+shed-skin,
+marvel-scale,
+', 'common', 1 , 'true' ),
+(148, 'dragonair', '
+dragon,
+', '
+shed-skin,
+marvel-scale,
+', 'common', 1 , 'true' ),
+(149, 'dragonite', '
+dragon,
+flying,
+', '
+inner-focus,
+multiscale,
+', 'common', 1 , 'true' ),
+(150, 'mewtwo', '
+psychic,
+', '
+pressure,
+unnerve,
+', 'common', 1 , 'true' ),
+(151, 'mew', '
+psychic,
+', '
+synchronize,
+', 'common', 1 , 'true' ),
+(152, 'chikorita', '
+grass,
+', '
+overgrow,
+leaf-guard,
+', 'common', 1 , 'true' ),
+(153, 'bayleef', '
+grass,
+', '
+overgrow,
+leaf-guard,
+', 'common', 1 , 'true' ),
+(154, 'meganium', '
+grass,
+', '
+overgrow,
+leaf-guard,
+', 'common', 1 , 'true' ),
+(155, 'cyndaquil', '
+fire,
+', '
+blaze,
+flash-fire,
+', 'common', 1 , 'true' ),
+(156, 'quilava', '
+fire,
+', '
+blaze,
+flash-fire,
+', 'common', 1 , 'true' ),
+(157, 'typhlosion', '
+fire,
+', '
+blaze,
+flash-fire,
+', 'common', 1 , 'true' ),
+(158, 'totodile', '
+water,
+', '
+torrent,
+sheer-force,
+', 'common', 1 , 'true' ),
+(159, 'croconaw', '
+water,
+', '
+torrent,
+sheer-force,
+', 'common', 1 , 'true' ),
+(160, 'feraligatr', '
+water,
+', '
+torrent,
+sheer-force,
+', 'common', 1 , 'true' ),
+(161, 'sentret', '
+normal,
+', '
+run-away,
+keen-eye,
+frisk,
+', 'common', 1 , 'true' ),
+(162, 'furret', '
+normal,
+', '
+run-away,
+keen-eye,
+frisk,
+', 'common', 1 , 'true' ),
+(163, 'hoothoot', '
+normal,
+flying,
+', '
+insomnia,
+keen-eye,
+tinted-lens,
+', 'common', 1 , 'true' ),
+(164, 'noctowl', '
+normal,
+flying,
+', '
+insomnia,
+keen-eye,
+tinted-lens,
+', 'common', 1 , 'true' ),
+(165, 'ledyba', '
+bug,
+flying,
+', '
+swarm,
+early-bird,
+rattled,
+', 'common', 1 , 'true' ),
+(166, 'ledian', '
+bug,
+flying,
+', '
+swarm,
+early-bird,
+iron-fist,
+', 'common', 1 , 'true' ),
+(167, 'spinarak', '
+bug,
+poison,
+', '
+swarm,
+insomnia,
+sniper,
+', 'common', 1 , 'true' ),
+(168, 'ariados', '
+bug,
+poison,
+', '
+swarm,
+insomnia,
+sniper,
+', 'common', 1 , 'true' ),
+(169, 'crobat', '
+poison,
+flying,
+', '
+inner-focus,
+infiltrator,
+', 'common', 1 , 'true' ),
+(170, 'chinchou', '
+water,
+electric,
+', '
+volt-absorb,
+illuminate,
+water-absorb,
+', 'common', 1 , 'true' ),
+(171, 'lanturn', '
+water,
+electric,
+', '
+volt-absorb,
+illuminate,
+water-absorb,
+', 'common', 1 , 'true' ),
+(172, 'pichu', '
+electric,
+', '
+static,
+lightning-rod,
+', 'common', 1 , 'true' ),
+(173, 'cleffa', '
+fairy,
+', '
+cute-charm,
+magic-guard,
+friend-guard,
+', 'common', 1 , 'true' ),
+(174, 'igglybuff', '
+normal,
+fairy,
+', '
+cute-charm,
+competitive,
+friend-guard,
+', 'common', 1 , 'true' ),
+(175, 'togepi', '
+fairy,
+', '
+hustle,
+serene-grace,
+super-luck,
+', 'common', 1 , 'true' ),
+(176, 'togetic', '
+fairy,
+flying,
+', '
+hustle,
+serene-grace,
+super-luck,
+', 'common', 1 , 'true' ),
+(177, 'natu', '
+psychic,
+flying,
+', '
+synchronize,
+early-bird,
+magic-bounce,
+', 'common', 1 , 'true' ),
+(178, 'xatu', '
+psychic,
+flying,
+', '
+synchronize,
+early-bird,
+magic-bounce,
+', 'common', 1 , 'true' ),
+(179, 'mareep', '
+electric,
+', '
+static,
+plus,
+', 'common', 1 , 'true' ),
+(180, 'flaaffy', '
+electric,
+', '
+static,
+plus,
+', 'common', 1 , 'true' ),
+(181, 'ampharos', '
+electric,
+', '
+static,
+plus,
+', 'common', 1 , 'true' ),
+(182, 'bellossom', '
+grass,
+', '
+chlorophyll,
+healer,
+', 'common', 1 , 'true' ),
+(183, 'marill', '
+water,
+fairy,
+', '
+thick-fat,
+huge-power,
+sap-sipper,
+', 'common', 1 , 'true' ),
+(184, 'azumarill', '
+water,
+fairy,
+', '
+thick-fat,
+huge-power,
+sap-sipper,
+', 'common', 1 , 'true' ),
+(185, 'sudowoodo', '
+rock,
+', '
+sturdy,
+rock-head,
+rattled,
+', 'common', 1 , 'true' ),
+(186, 'politoed', '
+water,
+', '
+water-absorb,
+damp,
+drizzle,
+', 'common', 1 , 'true' ),
+(187, 'hoppip', '
+grass,
+flying,
+', '
+chlorophyll,
+leaf-guard,
+infiltrator,
+', 'common', 1 , 'true' ),
+(188, 'skiploom', '
+grass,
+flying,
+', '
+chlorophyll,
+leaf-guard,
+infiltrator,
+', 'common', 1 , 'true' ),
+(189, 'jumpluff', '
+grass,
+flying,
+', '
+chlorophyll,
+leaf-guard,
+infiltrator,
+', 'common', 1 , 'true' ),
+(190, 'aipom', '
+normal,
+', '
+run-away,
+pickup,
+skill-link,
+', 'common', 1 , 'true' ),
+(191, 'sunkern', '
+grass,
+', '
+chlorophyll,
+solar-power,
+early-bird,
+', 'common', 1 , 'true' ),
+(192, 'sunflora', '
+grass,
+', '
+chlorophyll,
+solar-power,
+early-bird,
+', 'common', 1 , 'true' ),
+(193, 'yanma', '
+bug,
+flying,
+', '
+speed-boost,
+compound-eyes,
+frisk,
+', 'common', 1 , 'true' ),
+(194, 'wooper', '
+water,
+ground,
+', '
+damp,
+water-absorb,
+unaware,
+', 'common', 1 , 'true' ),
+(195, 'quagsire', '
+water,
+ground,
+', '
+damp,
+water-absorb,
+unaware,
+', 'common', 1 , 'true' ),
+(196, 'espeon', '
+psychic,
+', '
+synchronize,
+magic-bounce,
+', 'common', 1 , 'true' ),
+(197, 'umbreon', '
+dark,
+', '
+synchronize,
+inner-focus,
+', 'common', 1 , 'true' ),
+(198, 'murkrow', '
+dark,
+flying,
+', '
+insomnia,
+super-luck,
+prankster,
+', 'common', 1 , 'true' ),
+(199, 'slowking', '
+water,
+psychic,
+', '
+oblivious,
+own-tempo,
+regenerator,
+', 'common', 1 , 'true' ),
+(200, 'misdreavus', '
+ghost,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(203, 'girafarig', '
+normal,
+psychic,
+', '
+inner-focus,
+early-bird,
+sap-sipper,
+', 'common', 1 , 'true' ),
+(204, 'pineco', '
+bug,
+', '
+sturdy,
+overcoat,
+', 'common', 1 , 'true' ),
+(205, 'forretress', '
+bug,
+steel,
+', '
+sturdy,
+overcoat,
+', 'common', 1 , 'true' ),
+(206, 'dunsparce', '
+normal,
+', '
+serene-grace,
+run-away,
+rattled,
+', 'common', 1 , 'true' ),
+(207, 'gligar', '
+ground,
+flying,
+', '
+hyper-cutter,
+sand-veil,
+immunity,
+', 'common', 1 , 'true' ),
+(208, 'steelix', '
+steel,
+ground,
+', '
+rock-head,
+sturdy,
+sheer-force,
+', 'common', 1 , 'true' ),
+(209, 'snubbull', '
+fairy,
+', '
+intimidate,
+run-away,
+rattled,
+', 'common', 1 , 'true' ),
+(210, 'granbull', '
+fairy,
+', '
+intimidate,
+quick-feet,
+rattled,
+', 'common', 1 , 'true' ),
+(211, 'qwilfish', '
+water,
+poison,
+', '
+poison-point,
+swift-swim,
+intimidate,
+', 'common', 1 , 'true' ),
+(212, 'scizor', '
+bug,
+steel,
+', '
+swarm,
+technician,
+light-metal,
+', 'common', 1 , 'true' ),
+(213, 'shuckle', '
+bug,
+rock,
+', '
+sturdy,
+gluttony,
+contrary,
+', 'common', 1 , 'true' ),
+(214, 'heracross', '
+bug,
+fighting,
+', '
+swarm,
+guts,
+moxie,
+', 'common', 1 , 'true' ),
+(215, 'sneasel', '
+dark,
+ice,
+', '
+inner-focus,
+keen-eye,
+pickpocket,
+', 'common', 1 , 'true' ),
+(216, 'teddiursa', '
+normal,
+', '
+pickup,
+quick-feet,
+honey-gather,
+', 'common', 1 , 'true' ),
+(217, 'ursaring', '
+normal,
+', '
+guts,
+quick-feet,
+unnerve,
+', 'common', 1 , 'true' ),
+(218, 'slugma', '
+fire,
+', '
+magma-armor,
+flame-body,
+weak-armor,
+', 'common', 1 , 'true' ),
+(219, 'magcargo', '
+fire,
+rock,
+', '
+magma-armor,
+flame-body,
+weak-armor,
+', 'common', 1 , 'true' ),
+(220, 'swinub', '
+ice,
+ground,
+', '
+oblivious,
+snow-cloak,
+thick-fat,
+', 'common', 1 , 'true' ),
+(221, 'piloswine', '
+ice,
+ground,
+', '
+oblivious,
+snow-cloak,
+thick-fat,
+', 'common', 1 , 'true' ),
+(222, 'corsola', '
+water,
+rock,
+', '
+hustle,
+natural-cure,
+regenerator,
+', 'common', 1 , 'true' ),
+(223, 'remoraid', '
+water,
+', '
+hustle,
+sniper,
+moody,
+', 'common', 1 , 'true' ),
+(224, 'octillery', '
+water,
+', '
+suction-cups,
+sniper,
+moody,
+', 'common', 1 , 'true' ),
+(225, 'delibird', '
+ice,
+flying,
+', '
+vital-spirit,
+hustle,
+insomnia,
+', 'common', 1 , 'true' ),
+(226, 'mantine', '
+water,
+flying,
+', '
+swift-swim,
+water-absorb,
+water-veil,
+', 'common', 1 , 'true' ),
+(227, 'skarmory', '
+steel,
+flying,
+', '
+keen-eye,
+sturdy,
+weak-armor,
+', 'common', 1 , 'true' ),
+(228, 'houndour', '
+dark,
+fire,
+', '
+early-bird,
+flash-fire,
+unnerve,
+', 'common', 1 , 'true' ),
+(277, 'swellow', '
+normal,
+flying,
+', '
+guts,
+scrappy,
+', 'common', 1 , 'true' ),
+(229, 'houndoom', '
+dark,
+fire,
+', '
+early-bird,
+flash-fire,
+unnerve,
+', 'common', 1 , 'true' ),
+(230, 'kingdra', '
+water,
+dragon,
+', '
+swift-swim,
+sniper,
+damp,
+', 'common', 1 , 'true' ),
+(278, 'wingull', '
+water,
+flying,
+', '
+keen-eye,
+hydration,
+rain-dish,
+', 'common', 1 , 'true' ),
+(279, 'pelipper', '
+water,
+flying,
+', '
+keen-eye,
+drizzle,
+rain-dish,
+', 'common', 1 , 'true' ),
+(281, 'kirlia', '
+psychic,
+fairy,
+', '
+synchronize,
+trace,
+telepathy,
+', 'common', 1 , 'true' ),
+(231, 'phanpy', '
+ground,
+', '
+pickup,
+sand-veil,
+', 'common', 1 , 'true' ),
+(232, 'donphan', '
+ground,
+', '
+sturdy,
+sand-veil,
+', 'common', 1 , 'true' ),
+(233, 'porygon2', '
+normal,
+', '
+trace,
+download,
+analytic,
+', 'common', 1 , 'true' ),
+(234, 'stantler', '
+normal,
+', '
+intimidate,
+frisk,
+sap-sipper,
+', 'common', 1 , 'true' ),
+(283, 'surskit', '
+bug,
+water,
+', '
+swift-swim,
+rain-dish,
+', 'common', 1 , 'true' ),
+(236, 'tyrogue', '
+fighting,
+', '
+guts,
+steadfast,
+vital-spirit,
+', 'common', 1 , 'true' ),
+(237, 'hitmontop', '
+fighting,
+', '
+intimidate,
+technician,
+steadfast,
+', 'common', 1 , 'true' ),
+(238, 'smoochum', '
+ice,
+psychic,
+', '
+oblivious,
+forewarn,
+hydration,
+', 'common', 1 , 'true' ),
+(239, 'elekid', '
+electric,
+', '
+static,
+vital-spirit,
+', 'common', 1 , 'true' ),
+(240, 'magby', '
+fire,
+', '
+flame-body,
+vital-spirit,
+', 'common', 1 , 'true' ),
+(243, 'raikou', '
+electric,
+', '
+pressure,
+inner-focus,
+', 'common', 1 , 'true' ),
+(244, 'entei', '
+fire,
+', '
+pressure,
+inner-focus,
+', 'common', 1 , 'true' ),
+(245, 'suicune', '
+water,
+', '
+pressure,
+inner-focus,
+', 'common', 1 , 'true' ),
+(284, 'masquerain', '
+bug,
+flying,
+', '
+intimidate,
+unnerve,
+', 'common', 1 , 'true' ),
+(246, 'larvitar', '
+rock,
+ground,
+', '
+guts,
+sand-veil,
+', 'common', 1 , 'true' ),
+(247, 'pupitar', '
+rock,
+ground,
+', '
+shed-skin,
+', 'common', 1 , 'true' ),
+(241, 'miltank', '
+normal,
+', '
+thick-fat,
+scrappy,
+sap-sipper,
+', 'common', 1 , 'true' ),
+(285, 'shroomish', '
+grass,
+', '
+effect-spore,
+poison-heal,
+quick-feet,
+', 'common', 1 , 'true' ),
+(242, 'blissey', '
+normal,
+', '
+natural-cure,
+serene-grace,
+healer,
+', 'common', 1 , 'true' ),
+(286, 'breloom', '
+grass,
+fighting,
+', '
+effect-spore,
+poison-heal,
+technician,
+', 'common', 1 , 'true' ),
+(287, 'slakoth', '
+normal,
+', '
+truant,
+', 'common', 1 , 'true' ),
+(288, 'vigoroth', '
+normal,
+', '
+vital-spirit,
+', 'common', 1 , 'true' ),
+(252, 'treecko', '
+grass,
+', '
+overgrow,
+unburden,
+', 'common', 1 , 'true' ),
+(248, 'tyranitar', '
+rock,
+dark,
+', '
+sand-stream,
+unnerve,
+', 'common', 1 , 'true' ),
+(253, 'grovyle', '
+grass,
+', '
+overgrow,
+unburden,
+', 'common', 1 , 'true' ),
+(255, 'torchic', '
+fire,
+', '
+blaze,
+speed-boost,
+', 'common', 1 , 'true' ),
+(249, 'lugia', '
+psychic,
+flying,
+', '
+pressure,
+multiscale,
+', 'common', 1 , 'true' ),
+(256, 'combusken', '
+fire,
+fighting,
+', '
+blaze,
+speed-boost,
+', 'common', 1 , 'true' ),
+(250, 'ho-oh', '
+fire,
+flying,
+', '
+pressure,
+regenerator,
+', 'common', 1 , 'true' ),
+(251, 'celebi', '
+psychic,
+grass,
+', '
+natural-cure,
+', 'common', 1 , 'true' ),
+(258, 'mudkip', '
+water,
+', '
+torrent,
+damp,
+', 'common', 1 , 'true' ),
+(259, 'marshtomp', '
+water,
+ground,
+', '
+torrent,
+damp,
+', 'common', 1 , 'true' ),
+(260, 'swampert', '
+water,
+ground,
+', '
+torrent,
+damp,
+', 'common', 1 , 'true' ),
+(261, 'poochyena', '
+dark,
+', '
+run-away,
+quick-feet,
+rattled,
+', 'common', 1 , 'true' ),
+(262, 'mightyena', '
+dark,
+', '
+intimidate,
+quick-feet,
+moxie,
+', 'common', 1 , 'true' ),
+(254, 'sceptile', '
+grass,
+', '
+overgrow,
+unburden,
+', 'common', 1 , 'true' ),
+(263, 'zigzagoon', '
+normal,
+', '
+pickup,
+gluttony,
+quick-feet,
+', 'common', 1 , 'true' ),
+(264, 'linoone', '
+normal,
+', '
+pickup,
+gluttony,
+quick-feet,
+', 'common', 1 , 'true' ),
+(267, 'beautifly', '
+bug,
+flying,
+', '
+swarm,
+rivalry,
+', 'common', 1 , 'true' ),
+(269, 'dustox', '
+bug,
+poison,
+', '
+shield-dust,
+compound-eyes,
+', 'common', 1 , 'true' ),
+(270, 'lotad', '
+water,
+grass,
+', '
+swift-swim,
+rain-dish,
+own-tempo,
+', 'common', 1 , 'true' ),
+(271, 'lombre', '
+water,
+grass,
+', '
+swift-swim,
+rain-dish,
+own-tempo,
+', 'common', 1 , 'true' ),
+(272, 'ludicolo', '
+water,
+grass,
+', '
+swift-swim,
+rain-dish,
+own-tempo,
+', 'common', 1 , 'true' ),
+(273, 'seedot', '
+grass,
+', '
+chlorophyll,
+early-bird,
+pickpocket,
+', 'common', 1 , 'true' ),
+(274, 'nuzleaf', '
+grass,
+dark,
+', '
+chlorophyll,
+early-bird,
+pickpocket,
+', 'common', 1 , 'true' ),
+(275, 'shiftry', '
+grass,
+dark,
+', '
+chlorophyll,
+early-bird,
+pickpocket,
+', 'common', 1 , 'true' ),
+(276, 'taillow', '
+normal,
+flying,
+', '
+guts,
+scrappy,
+', 'common', 1 , 'true' ),
+(290, 'nincada', '
+bug,
+ground,
+', '
+compound-eyes,
+run-away,
+', 'common', 1 , 'true' ),
+(257, 'blaziken', '
+fire,
+fighting,
+', '
+blaze,
+speed-boost,
+', 'common', 1 , 'true' ),
+(291, 'ninjask', '
+bug,
+flying,
+', '
+speed-boost,
+infiltrator,
+', 'common', 1 , 'true' ),
+(292, 'shedinja', '
+bug,
+ghost,
+', '
+wonder-guard,
+', 'common', 1 , 'true' ),
+(293, 'whismur', '
+normal,
+', '
+soundproof,
+rattled,
+', 'common', 1 , 'true' ),
+(294, 'loudred', '
+normal,
+', '
+soundproof,
+scrappy,
+', 'common', 1 , 'true' ),
+(296, 'makuhita', '
+fighting,
+', '
+thick-fat,
+guts,
+sheer-force,
+', 'common', 1 , 'true' ),
+(297, 'hariyama', '
+fighting,
+', '
+thick-fat,
+guts,
+sheer-force,
+', 'common', 1 , 'true' ),
+(298, 'azurill', '
+normal,
+fairy,
+', '
+thick-fat,
+huge-power,
+sap-sipper,
+', 'common', 1 , 'true' ),
+(299, 'nosepass', '
+rock,
+', '
+sturdy,
+magnet-pull,
+sand-force,
+', 'common', 1 , 'true' ),
+(301, 'delcatty', '
+normal,
+', '
+cute-charm,
+normalize,
+wonder-skin,
+', 'common', 1 , 'true' ),
+(304, 'aron', '
+steel,
+rock,
+', '
+sturdy,
+rock-head,
+heavy-metal,
+', 'common', 1 , 'true' ),
+(305, 'lairon', '
+steel,
+rock,
+', '
+sturdy,
+rock-head,
+heavy-metal,
+', 'common', 1 , 'true' ),
+(309, 'electrike', '
+electric,
+', '
+static,
+lightning-rod,
+minus,
+', 'common', 1 , 'true' ),
+(310, 'manectric', '
+electric,
+', '
+static,
+lightning-rod,
+minus,
+', 'common', 1 , 'true' ),
+(311, 'plusle', '
+electric,
+', '
+plus,
+lightning-rod,
+', 'common', 1 , 'true' ),
+(312, 'minun', '
+electric,
+', '
+minus,
+volt-absorb,
+', 'common', 1 , 'true' ),
+(313, 'volbeat', '
+bug,
+', '
+illuminate,
+swarm,
+prankster,
+', 'common', 1 , 'true' ),
+(314, 'illumise', '
+bug,
+', '
+oblivious,
+tinted-lens,
+prankster,
+', 'common', 1 , 'true' ),
+(315, 'roselia', '
+grass,
+poison,
+', '
+natural-cure,
+poison-point,
+leaf-guard,
+', 'common', 1 , 'true' ),
+(316, 'gulpin', '
+poison,
+', '
+liquid-ooze,
+sticky-hold,
+gluttony,
+', 'common', 1 , 'true' ),
+(280, 'ralts', '
+psychic,
+fairy,
+', '
+synchronize,
+trace,
+telepathy,
+', 'common', 1 , 'true' ),
+(282, 'gardevoir', '
+psychic,
+fairy,
+', '
+synchronize,
+trace,
+telepathy,
+', 'common', 1 , 'true' ),
+(317, 'swalot', '
+poison,
+', '
+liquid-ooze,
+sticky-hold,
+gluttony,
+', 'common', 1 , 'true' ),
+(333, 'swablu', '
+normal,
+flying,
+', '
+natural-cure,
+cloud-nine,
+', 'common', 1 , 'true' ),
+(334, 'altaria', '
+dragon,
+flying,
+', '
+natural-cure,
+cloud-nine,
+', 'common', 1 , 'true' ),
+(289, 'slaking', '
+normal,
+', '
+truant,
+', 'common', 1 , 'true' ),
+(295, 'exploud', '
+normal,
+', '
+soundproof,
+scrappy,
+', 'common', 1 , 'true' ),
+(300, 'skitty', '
+normal,
+', '
+cute-charm,
+normalize,
+wonder-skin,
+', 'common', 1 , 'true' ),
+(318, 'carvanha', '
+water,
+dark,
+', '
+rough-skin,
+speed-boost,
+', 'common', 1 , 'true' ),
+(319, 'sharpedo', '
+water,
+dark,
+', '
+rough-skin,
+speed-boost,
+', 'common', 1 , 'true' ),
+(302, 'sableye', '
+dark,
+ghost,
+', '
+keen-eye,
+stall,
+prankster,
+', 'common', 1 , 'true' ),
+(303, 'mawile', '
+steel,
+fairy,
+', '
+hyper-cutter,
+intimidate,
+sheer-force,
+', 'common', 1 , 'true' ),
+(320, 'wailmer', '
+water,
+', '
+water-veil,
+oblivious,
+pressure,
+', 'common', 1 , 'true' ),
+(306, 'aggron', '
+steel,
+rock,
+', '
+sturdy,
+rock-head,
+heavy-metal,
+', 'common', 1 , 'true' ),
+(307, 'meditite', '
+fighting,
+psychic,
+', '
+pure-power,
+telepathy,
+', 'common', 1 , 'true' ),
+(308, 'medicham', '
+fighting,
+psychic,
+', '
+pure-power,
+telepathy,
+', 'common', 1 , 'true' ),
+(321, 'wailord', '
+water,
+', '
+water-veil,
+oblivious,
+pressure,
+', 'common', 1 , 'true' ),
+(322, 'numel', '
+fire,
+ground,
+', '
+oblivious,
+simple,
+own-tempo,
+', 'common', 1 , 'true' ),
+(349, 'feebas', '
+water,
+', '
+swift-swim,
+oblivious,
+adaptability,
+', 'common', 1 , 'true' ),
+(336, 'seviper', '
+poison,
+', '
+shed-skin,
+infiltrator,
+', 'common', 1 , 'true' ),
+(337, 'lunatone', '
+rock,
+psychic,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(338, 'solrock', '
+rock,
+psychic,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(339, 'barboach', '
+water,
+ground,
+', '
+oblivious,
+anticipation,
+hydration,
+', 'common', 1 , 'true' ),
+(340, 'whiscash', '
+water,
+ground,
+', '
+oblivious,
+anticipation,
+hydration,
+', 'common', 1 , 'true' ),
+(341, 'corphish', '
+water,
+', '
+hyper-cutter,
+shell-armor,
+adaptability,
+', 'common', 1 , 'true' ),
+(342, 'crawdaunt', '
+water,
+dark,
+', '
+hyper-cutter,
+shell-armor,
+adaptability,
+', 'common', 1 , 'true' ),
+(343, 'baltoy', '
+ground,
+psychic,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(323, 'camerupt', '
+fire,
+ground,
+', '
+magma-armor,
+solid-rock,
+anger-point,
+', 'common', 1 , 'true' ),
+(324, 'torkoal', '
+fire,
+', '
+white-smoke,
+drought,
+shell-armor,
+', 'common', 1 , 'true' ),
+(325, 'spoink', '
+psychic,
+', '
+thick-fat,
+own-tempo,
+gluttony,
+', 'common', 1 , 'true' ),
+(345, 'lileep', '
+rock,
+grass,
+', '
+suction-cups,
+storm-drain,
+', 'common', 1 , 'true' ),
+(346, 'cradily', '
+rock,
+grass,
+', '
+suction-cups,
+storm-drain,
+', 'common', 1 , 'true' ),
+(347, 'anorith', '
+rock,
+bug,
+', '
+battle-armor,
+swift-swim,
+', 'common', 1 , 'true' ),
+(348, 'armaldo', '
+rock,
+bug,
+', '
+battle-armor,
+swift-swim,
+', 'common', 1 , 'true' ),
+(350, 'milotic', '
+water,
+', '
+marvel-scale,
+competitive,
+cute-charm,
+', 'common', 1 , 'true' ),
+(351, 'castform', '
+normal,
+', '
+forecast,
+', 'common', 1 , 'true' ),
+(353, 'shuppet', '
+ghost,
+', '
+insomnia,
+frisk,
+cursed-body,
+', 'common', 1 , 'true' ),
+(354, 'banette', '
+ghost,
+', '
+insomnia,
+frisk,
+cursed-body,
+', 'common', 1 , 'true' ),
+(355, 'duskull', '
+ghost,
+', '
+levitate,
+frisk,
+', 'common', 1 , 'true' ),
+(328, 'trapinch', '
+ground,
+', '
+hyper-cutter,
+arena-trap,
+sheer-force,
+', 'common', 1 , 'true' ),
+(357, 'tropius', '
+grass,
+flying,
+', '
+chlorophyll,
+solar-power,
+harvest,
+', 'common', 1 , 'true' ),
+(326, 'grumpig', '
+psychic,
+', '
+thick-fat,
+own-tempo,
+gluttony,
+', 'common', 1 , 'true' ),
+(327, 'spinda', '
+normal,
+', '
+own-tempo,
+tangled-feet,
+contrary,
+', 'common', 1 , 'true' ),
+(358, 'chimecho', '
+psychic,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(329, 'vibrava', '
+ground,
+dragon,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(330, 'flygon', '
+ground,
+dragon,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(331, 'cacnea', '
+grass,
+', '
+sand-veil,
+water-absorb,
+', 'common', 1 , 'true' ),
+(360, 'wynaut', '
+psychic,
+', '
+shadow-tag,
+telepathy,
+', 'common', 1 , 'true' ),
+(335, 'zangoose', '
+normal,
+', '
+immunity,
+toxic-boost,
+', 'common', 1 , 'true' ),
+(361, 'snorunt', '
+ice,
+', '
+inner-focus,
+ice-body,
+moody,
+', 'common', 1 , 'true' ),
+(362, 'glalie', '
+ice,
+', '
+inner-focus,
+ice-body,
+moody,
+', 'common', 1 , 'true' ),
+(363, 'spheal', '
+ice,
+water,
+', '
+thick-fat,
+ice-body,
+oblivious,
+', 'common', 1 , 'true' ),
+(364, 'sealeo', '
+ice,
+water,
+', '
+thick-fat,
+ice-body,
+oblivious,
+', 'common', 1 , 'true' ),
+(365, 'walrein', '
+ice,
+water,
+', '
+thick-fat,
+ice-body,
+oblivious,
+', 'common', 1 , 'true' ),
+(366, 'clamperl', '
+water,
+', '
+shell-armor,
+rattled,
+', 'common', 1 , 'true' ),
+(367, 'huntail', '
+water,
+', '
+swift-swim,
+water-veil,
+', 'common', 1 , 'true' ),
+(368, 'gorebyss', '
+water,
+', '
+swift-swim,
+hydration,
+', 'common', 1 , 'true' ),
+(369, 'relicanth', '
+water,
+rock,
+', '
+swift-swim,
+rock-head,
+sturdy,
+', 'common', 1 , 'true' ),
+(370, 'luvdisc', '
+water,
+', '
+swift-swim,
+hydration,
+', 'common', 1 , 'true' ),
+(371, 'bagon', '
+dragon,
+', '
+rock-head,
+sheer-force,
+', 'common', 1 , 'true' ),
+(344, 'claydol', '
+ground,
+psychic,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(372, 'shelgon', '
+dragon,
+', '
+rock-head,
+overcoat,
+', 'common', 1 , 'true' ),
+(352, 'kecleon', '
+normal,
+', '
+color-change,
+protean,
+', 'common', 1 , 'true' ),
+(356, 'dusclops', '
+ghost,
+', '
+pressure,
+frisk,
+', 'common', 1 , 'true' ),
+(359, 'absol', '
+dark,
+', '
+pressure,
+super-luck,
+justified,
+', 'common', 1 , 'true' ),
+(373, 'salamence', '
+dragon,
+flying,
+', '
+intimidate,
+moxie,
+', 'common', 1 , 'true' ),
+(374, 'beldum', '
+steel,
+psychic,
+', '
+clear-body,
+light-metal,
+', 'common', 1 , 'true' ),
+(375, 'metang', '
+steel,
+psychic,
+', '
+clear-body,
+light-metal,
+', 'common', 1 , 'true' ),
+(376, 'metagross', '
+steel,
+psychic,
+', '
+clear-body,
+light-metal,
+', 'common', 1 , 'true' ),
+(377, 'regirock', '
+rock,
+', '
+clear-body,
+sturdy,
+', 'common', 1 , 'true' ),
+(378, 'regice', '
+ice,
+', '
+clear-body,
+ice-body,
+', 'common', 1 , 'true' ),
+(379, 'registeel', '
+steel,
+', '
+clear-body,
+light-metal,
+', 'common', 1 , 'true' ),
+(380, 'latias', '
+dragon,
+psychic,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(381, 'latios', '
+dragon,
+psychic,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(382, 'kyogre', '
+water,
+', '
+drizzle,
+', 'common', 1 , 'true' ),
+(383, 'groudon', '
+ground,
+', '
+drought,
+', 'common', 1 , 'true' ),
+(384, 'rayquaza', '
+dragon,
+flying,
+', '
+air-lock,
+', 'common', 1 , 'true' ),
+(385, 'jirachi', '
+steel,
+psychic,
+', '
+serene-grace,
+', 'common', 1 , 'true' ),
+(386, 'deoxys-normal', '
+psychic,
+', '
+pressure,
+', 'common', 1 , 'true' ),
+(387, 'turtwig', '
+grass,
+', '
+overgrow,
+shell-armor,
+', 'common', 1 , 'true' ),
+(388, 'grotle', '
+grass,
+', '
+overgrow,
+shell-armor,
+', 'common', 1 , 'true' ),
+(389, 'torterra', '
+grass,
+ground,
+', '
+overgrow,
+shell-armor,
+', 'common', 1 , 'true' ),
+(390, 'chimchar', '
+fire,
+', '
+blaze,
+iron-fist,
+', 'common', 1 , 'true' ),
+(391, 'monferno', '
+fire,
+fighting,
+', '
+blaze,
+iron-fist,
+', 'common', 1 , 'true' ),
+(392, 'infernape', '
+fire,
+fighting,
+', '
+blaze,
+iron-fist,
+', 'common', 1 , 'true' ),
+(393, 'piplup', '
+water,
+', '
+torrent,
+defiant,
+', 'common', 1 , 'true' ),
+(394, 'prinplup', '
+water,
+', '
+torrent,
+defiant,
+', 'common', 1 , 'true' ),
+(395, 'empoleon', '
+water,
+steel,
+', '
+torrent,
+defiant,
+', 'common', 1 , 'true' ),
+(396, 'starly', '
+normal,
+flying,
+', '
+keen-eye,
+reckless,
+', 'common', 1 , 'true' ),
+(397, 'staravia', '
+normal,
+flying,
+', '
+intimidate,
+reckless,
+', 'common', 1 , 'true' ),
+(398, 'staraptor', '
+normal,
+flying,
+', '
+intimidate,
+reckless,
+', 'common', 1 , 'true' ),
+(399, 'bidoof', '
+normal,
+', '
+simple,
+unaware,
+moody,
+', 'common', 1 , 'true' ),
+(400, 'bibarel', '
+normal,
+water,
+', '
+simple,
+unaware,
+moody,
+', 'common', 1 , 'true' ),
+(401, 'kricketot', '
+bug,
+', '
+shed-skin,
+run-away,
+', 'common', 1 , 'true' ),
+(402, 'kricketune', '
+bug,
+', '
+swarm,
+technician,
+', 'common', 1 , 'true' ),
+(403, 'shinx', '
+electric,
+', '
+rivalry,
+intimidate,
+guts,
+', 'common', 1 , 'true' ),
+(404, 'luxio', '
+electric,
+', '
+rivalry,
+intimidate,
+guts,
+', 'common', 1 , 'true' ),
+(405, 'luxray', '
+electric,
+', '
+rivalry,
+intimidate,
+guts,
+', 'common', 1 , 'true' ),
+(406, 'budew', '
+grass,
+poison,
+', '
+natural-cure,
+poison-point,
+leaf-guard,
+', 'common', 1 , 'true' ),
+(407, 'roserade', '
+grass,
+poison,
+', '
+natural-cure,
+poison-point,
+technician,
+', 'common', 1 , 'true' ),
+(408, 'cranidos', '
+rock,
+', '
+mold-breaker,
+sheer-force,
+', 'common', 1 , 'true' ),
+(409, 'rampardos', '
+rock,
+', '
+mold-breaker,
+sheer-force,
+', 'common', 1 , 'true' ),
+(332, 'cacturne', '
+grass,
+dark,
+', '
+sand-veil,
+water-absorb,
+', 'common', 1 , 'true' ),
+(410, 'shieldon', '
+rock,
+steel,
+', '
+sturdy,
+soundproof,
+', 'common', 1 , 'true' ),
+(411, 'bastiodon', '
+rock,
+steel,
+', '
+sturdy,
+soundproof,
+', 'common', 1 , 'true' ),
+(412, 'burmy', '
+bug,
+', '
+shed-skin,
+overcoat,
+', 'common', 1 , 'true' ),
+(413, 'wormadam-plant', '
+bug,
+grass,
+', '
+anticipation,
+overcoat,
+', 'common', 1 , 'true' ),
+(414, 'mothim', '
+bug,
+flying,
+', '
+swarm,
+tinted-lens,
+', 'common', 1 , 'true' ),
+(415, 'combee', '
+bug,
+flying,
+', '
+honey-gather,
+hustle,
+', 'common', 1 , 'true' ),
+(416, 'vespiquen', '
+bug,
+flying,
+', '
+pressure,
+unnerve,
+', 'common', 1 , 'true' ),
+(417, 'pachirisu', '
+electric,
+', '
+run-away,
+pickup,
+volt-absorb,
+', 'common', 1 , 'true' ),
+(418, 'buizel', '
+water,
+', '
+swift-swim,
+water-veil,
+', 'common', 1 , 'true' ),
+(419, 'floatzel', '
+water,
+', '
+swift-swim,
+water-veil,
+', 'common', 1 , 'true' ),
+(420, 'cherubi', '
+grass,
+', '
+chlorophyll,
+', 'common', 1 , 'true' ),
+(421, 'cherrim', '
+grass,
+', '
+flower-gift,
+', 'common', 1 , 'true' ),
+(422, 'shellos', '
+water,
+', '
+sticky-hold,
+storm-drain,
+sand-force,
+', 'common', 1 , 'true' ),
+(423, 'gastrodon', '
+water,
+ground,
+', '
+sticky-hold,
+storm-drain,
+sand-force,
+', 'common', 1 , 'true' ),
+(424, 'ambipom', '
+normal,
+', '
+technician,
+pickup,
+skill-link,
+', 'common', 1 , 'true' ),
+(425, 'drifloon', '
+ghost,
+flying,
+', '
+aftermath,
+unburden,
+flare-boost,
+', 'common', 1 , 'true' ),
+(426, 'drifblim', '
+ghost,
+flying,
+', '
+aftermath,
+unburden,
+flare-boost,
+', 'common', 1 , 'true' ),
+(427, 'buneary', '
+normal,
+', '
+run-away,
+klutz,
+limber,
+', 'common', 1 , 'true' ),
+(428, 'lopunny', '
+normal,
+', '
+cute-charm,
+klutz,
+limber,
+', 'common', 1 , 'true' ),
+(429, 'mismagius', '
+ghost,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(430, 'honchkrow', '
+dark,
+flying,
+', '
+insomnia,
+super-luck,
+moxie,
+', 'common', 1 , 'true' ),
+(431, 'glameow', '
+normal,
+', '
+limber,
+own-tempo,
+keen-eye,
+', 'common', 1 , 'true' ),
+(432, 'purugly', '
+normal,
+', '
+thick-fat,
+own-tempo,
+defiant,
+', 'common', 1 , 'true' ),
+(433, 'chingling', '
+psychic,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(434, 'stunky', '
+poison,
+dark,
+', '
+stench,
+aftermath,
+keen-eye,
+', 'common', 1 , 'true' ),
+(435, 'skuntank', '
+poison,
+dark,
+', '
+stench,
+aftermath,
+keen-eye,
+', 'common', 1 , 'true' ),
+(436, 'bronzor', '
+steel,
+psychic,
+', '
+levitate,
+heatproof,
+heavy-metal,
+', 'common', 1 , 'true' ),
+(437, 'bronzong', '
+steel,
+psychic,
+', '
+levitate,
+heatproof,
+heavy-metal,
+', 'common', 1 , 'true' ),
+(438, 'bonsly', '
+rock,
+', '
+sturdy,
+rock-head,
+rattled,
+', 'common', 1 , 'true' ),
+(439, 'mime-jr', '
+psychic,
+fairy,
+', '
+soundproof,
+filter,
+technician,
+', 'common', 1 , 'true' ),
+(440, 'happiny', '
+normal,
+', '
+natural-cure,
+serene-grace,
+friend-guard,
+', 'common', 1 , 'true' ),
+(441, 'chatot', '
+normal,
+flying,
+', '
+keen-eye,
+tangled-feet,
+big-pecks,
+', 'common', 1 , 'true' ),
+(442, 'spiritomb', '
+ghost,
+dark,
+', '
+pressure,
+infiltrator,
+', 'common', 1 , 'true' ),
+(443, 'gible', '
+dragon,
+ground,
+', '
+sand-veil,
+rough-skin,
+', 'common', 1 , 'true' ),
+(444, 'gabite', '
+dragon,
+ground,
+', '
+sand-veil,
+rough-skin,
+', 'common', 1 , 'true' ),
+(445, 'garchomp', '
+dragon,
+ground,
+', '
+sand-veil,
+rough-skin,
+', 'common', 1 , 'true' ),
+(446, 'munchlax', '
+normal,
+', '
+pickup,
+thick-fat,
+gluttony,
+', 'common', 1 , 'true' ),
+(447, 'riolu', '
+fighting,
+', '
+steadfast,
+inner-focus,
+prankster,
+', 'common', 1 , 'true' ),
+(448, 'lucario', '
+fighting,
+steel,
+', '
+steadfast,
+inner-focus,
+justified,
+', 'common', 1 , 'true' ),
+(449, 'hippopotas', '
+ground,
+', '
+sand-stream,
+sand-force,
+', 'common', 1 , 'true' ),
+(450, 'hippowdon', '
+ground,
+', '
+sand-stream,
+sand-force,
+', 'common', 1 , 'true' ),
+(451, 'skorupi', '
+poison,
+bug,
+', '
+battle-armor,
+sniper,
+keen-eye,
+', 'common', 1 , 'true' ),
+(452, 'drapion', '
+poison,
+dark,
+', '
+battle-armor,
+sniper,
+keen-eye,
+', 'common', 1 , 'true' ),
+(453, 'croagunk', '
+poison,
+fighting,
+', '
+anticipation,
+dry-skin,
+poison-touch,
+', 'common', 1 , 'true' ),
+(454, 'toxicroak', '
+poison,
+fighting,
+', '
+anticipation,
+dry-skin,
+poison-touch,
+', 'common', 1 , 'true' ),
+(455, 'carnivine', '
+grass,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(456, 'finneon', '
+water,
+', '
+swift-swim,
+storm-drain,
+water-veil,
+', 'common', 1 , 'true' ),
+(457, 'lumineon', '
+water,
+', '
+swift-swim,
+storm-drain,
+water-veil,
+', 'common', 1 , 'true' ),
+(458, 'mantyke', '
+water,
+flying,
+', '
+swift-swim,
+water-absorb,
+water-veil,
+', 'common', 1 , 'true' ),
+(459, 'snover', '
+grass,
+ice,
+', '
+snow-warning,
+soundproof,
+', 'common', 1 , 'true' ),
+(460, 'abomasnow', '
+grass,
+ice,
+', '
+snow-warning,
+soundproof,
+', 'common', 1 , 'true' ),
+(461, 'weavile', '
+dark,
+ice,
+', '
+pressure,
+pickpocket,
+', 'common', 1 , 'true' ),
+(462, 'magnezone', '
+electric,
+steel,
+', '
+magnet-pull,
+sturdy,
+analytic,
+', 'common', 1 , 'true' ),
+(463, 'lickilicky', '
+normal,
+', '
+own-tempo,
+oblivious,
+cloud-nine,
+', 'common', 1 , 'true' ),
+(464, 'rhyperior', '
+ground,
+rock,
+', '
+lightning-rod,
+solid-rock,
+reckless,
+', 'common', 1 , 'true' ),
+(465, 'tangrowth', '
+grass,
+', '
+chlorophyll,
+leaf-guard,
+regenerator,
+', 'common', 1 , 'true' ),
+(466, 'electivire', '
+electric,
+', '
+motor-drive,
+vital-spirit,
+', 'common', 1 , 'true' ),
+(467, 'magmortar', '
+fire,
+', '
+flame-body,
+vital-spirit,
+', 'common', 1 , 'true' ),
+(468, 'togekiss', '
+fairy,
+flying,
+', '
+hustle,
+serene-grace,
+super-luck,
+', 'common', 1 , 'true' ),
+(469, 'yanmega', '
+bug,
+flying,
+', '
+speed-boost,
+tinted-lens,
+frisk,
+', 'common', 1 , 'true' ),
+(470, 'leafeon', '
+grass,
+', '
+leaf-guard,
+chlorophyll,
+', 'common', 1 , 'true' ),
+(471, 'glaceon', '
+ice,
+', '
+snow-cloak,
+ice-body,
+', 'common', 1 , 'true' ),
+(472, 'gliscor', '
+ground,
+flying,
+', '
+hyper-cutter,
+sand-veil,
+poison-heal,
+', 'common', 1 , 'true' ),
+(473, 'mamoswine', '
+ice,
+ground,
+', '
+oblivious,
+snow-cloak,
+thick-fat,
+', 'common', 1 , 'true' ),
+(474, 'porygon-z', '
+normal,
+', '
+adaptability,
+download,
+analytic,
+', 'common', 1 , 'true' ),
+(475, 'gallade', '
+psychic,
+fighting,
+', '
+steadfast,
+justified,
+', 'common', 1 , 'true' ),
+(476, 'probopass', '
+rock,
+steel,
+', '
+sturdy,
+magnet-pull,
+sand-force,
+', 'common', 1 , 'true' ),
+(477, 'dusknoir', '
+ghost,
+', '
+pressure,
+frisk,
+', 'common', 1 , 'true' ),
+(478, 'froslass', '
+ice,
+ghost,
+', '
+snow-cloak,
+cursed-body,
+', 'common', 1 , 'true' ),
+(479, 'rotom', '
+electric,
+ghost,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(480, 'uxie', '
+psychic,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(481, 'mesprit', '
+psychic,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(482, 'azelf', '
+psychic,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(483, 'dialga', '
+steel,
+dragon,
+', '
+pressure,
+telepathy,
+', 'common', 1 , 'true' ),
+(484, 'palkia', '
+water,
+dragon,
+', '
+pressure,
+telepathy,
+', 'common', 1 , 'true' ),
+(485, 'heatran', '
+fire,
+steel,
+', '
+flash-fire,
+flame-body,
+', 'common', 1 , 'true' ),
+(486, 'regigigas', '
+normal,
+', '
+slow-start,
+', 'common', 1 , 'true' ),
+(487, 'giratina-altered', '
+ghost,
+dragon,
+', '
+pressure,
+telepathy,
+', 'common', 1 , 'true' ),
+(488, 'cresselia', '
+psychic,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(489, 'phione', '
+water,
+', '
+hydration,
+', 'common', 1 , 'true' ),
+(490, 'manaphy', '
+water,
+', '
+hydration,
+', 'common', 1 , 'true' ),
+(491, 'darkrai', '
+dark,
+', '
+bad-dreams,
+', 'common', 1 , 'true' ),
+(492, 'shaymin-land', '
+grass,
+', '
+natural-cure,
+', 'common', 1 , 'true' ),
+(493, 'arceus', '
+normal,
+', '
+multitype,
+', 'common', 1 , 'true' ),
+(494, 'victini', '
+psychic,
+fire,
+', '
+victory-star,
+', 'common', 1 , 'true' ),
+(495, 'snivy', '
+grass,
+', '
+overgrow,
+contrary,
+', 'common', 1 , 'true' ),
+(496, 'servine', '
+grass,
+', '
+overgrow,
+contrary,
+', 'common', 1 , 'true' ),
+(497, 'serperior', '
+grass,
+', '
+overgrow,
+contrary,
+', 'common', 1 , 'true' ),
+(498, 'tepig', '
+fire,
+', '
+blaze,
+thick-fat,
+', 'common', 1 , 'true' ),
+(499, 'pignite', '
+fire,
+fighting,
+', '
+blaze,
+thick-fat,
+', 'common', 1 , 'true' ),
+(500, 'emboar', '
+fire,
+fighting,
+', '
+blaze,
+reckless,
+', 'common', 1 , 'true' ),
+(501, 'oshawott', '
+water,
+', '
+torrent,
+shell-armor,
+', 'common', 1 , 'true' ),
+(502, 'dewott', '
+water,
+', '
+torrent,
+shell-armor,
+', 'common', 1 , 'true' ),
+(503, 'samurott', '
+water,
+', '
+torrent,
+shell-armor,
+', 'common', 1 , 'true' ),
+(504, 'patrat', '
+normal,
+', '
+run-away,
+keen-eye,
+analytic,
+', 'common', 1 , 'true' ),
+(505, 'watchog', '
+normal,
+', '
+illuminate,
+keen-eye,
+analytic,
+', 'common', 1 , 'true' ),
+(506, 'lillipup', '
+normal,
+', '
+vital-spirit,
+pickup,
+run-away,
+', 'common', 1 , 'true' ),
+(507, 'herdier', '
+normal,
+', '
+intimidate,
+sand-rush,
+scrappy,
+', 'common', 1 , 'true' ),
+(508, 'stoutland', '
+normal,
+', '
+intimidate,
+sand-rush,
+scrappy,
+', 'common', 1 , 'true' ),
+(509, 'purrloin', '
+dark,
+', '
+limber,
+unburden,
+prankster,
+', 'common', 1 , 'true' ),
+(510, 'liepard', '
+dark,
+', '
+limber,
+unburden,
+prankster,
+', 'common', 1 , 'true' ),
+(511, 'pansage', '
+grass,
+', '
+gluttony,
+overgrow,
+', 'common', 1 , 'true' ),
+(512, 'simisage', '
+grass,
+', '
+gluttony,
+overgrow,
+', 'common', 1 , 'true' ),
+(513, 'pansear', '
+fire,
+', '
+gluttony,
+blaze,
+', 'common', 1 , 'true' ),
+(514, 'simisear', '
+fire,
+', '
+gluttony,
+blaze,
+', 'common', 1 , 'true' ),
+(515, 'panpour', '
+water,
+', '
+gluttony,
+torrent,
+', 'common', 1 , 'true' ),
+(516, 'simipour', '
+water,
+', '
+gluttony,
+torrent,
+', 'common', 1 , 'true' ),
+(517, 'munna', '
+psychic,
+', '
+forewarn,
+synchronize,
+telepathy,
+', 'common', 1 , 'true' ),
+(518, 'musharna', '
+psychic,
+', '
+forewarn,
+synchronize,
+telepathy,
+', 'common', 1 , 'true' ),
+(519, 'pidove', '
+normal,
+flying,
+', '
+big-pecks,
+super-luck,
+rivalry,
+', 'common', 1 , 'true' ),
+(520, 'tranquill', '
+normal,
+flying,
+', '
+big-pecks,
+super-luck,
+rivalry,
+', 'common', 1 , 'true' ),
+(521, 'unfezant', '
+normal,
+flying,
+', '
+big-pecks,
+super-luck,
+rivalry,
+', 'common', 1 , 'true' ),
+(522, 'blitzle', '
+electric,
+', '
+lightning-rod,
+motor-drive,
+sap-sipper,
+', 'common', 1 , 'true' ),
+(523, 'zebstrika', '
+electric,
+', '
+lightning-rod,
+motor-drive,
+sap-sipper,
+', 'common', 1 , 'true' ),
+(524, 'roggenrola', '
+rock,
+', '
+sturdy,
+weak-armor,
+sand-force,
+', 'common', 1 , 'true' ),
+(525, 'boldore', '
+rock,
+', '
+sturdy,
+weak-armor,
+sand-force,
+', 'common', 1 , 'true' ),
+(526, 'gigalith', '
+rock,
+', '
+sturdy,
+sand-stream,
+sand-force,
+', 'common', 1 , 'true' ),
+(527, 'woobat', '
+psychic,
+flying,
+', '
+unaware,
+klutz,
+simple,
+', 'common', 1 , 'true' ),
+(528, 'swoobat', '
+psychic,
+flying,
+', '
+unaware,
+klutz,
+simple,
+', 'common', 1 , 'true' ),
+(529, 'drilbur', '
+ground,
+', '
+sand-rush,
+sand-force,
+mold-breaker,
+', 'common', 1 , 'true' ),
+(530, 'excadrill', '
+ground,
+steel,
+', '
+sand-rush,
+sand-force,
+mold-breaker,
+', 'common', 1 , 'true' ),
+(531, 'audino', '
+normal,
+', '
+healer,
+regenerator,
+klutz,
+', 'common', 1 , 'true' ),
+(532, 'timburr', '
+fighting,
+', '
+guts,
+sheer-force,
+iron-fist,
+', 'common', 1 , 'true' ),
+(533, 'gurdurr', '
+fighting,
+', '
+guts,
+sheer-force,
+iron-fist,
+', 'common', 1 , 'true' ),
+(534, 'conkeldurr', '
+fighting,
+', '
+guts,
+sheer-force,
+iron-fist,
+', 'common', 1 , 'true' ),
+(535, 'tympole', '
+water,
+', '
+swift-swim,
+hydration,
+water-absorb,
+', 'common', 1 , 'true' ),
+(536, 'palpitoad', '
+water,
+ground,
+', '
+swift-swim,
+hydration,
+water-absorb,
+', 'common', 1 , 'true' ),
+(537, 'seismitoad', '
+water,
+ground,
+', '
+swift-swim,
+poison-touch,
+water-absorb,
+', 'common', 1 , 'true' ),
+(538, 'throh', '
+fighting,
+', '
+guts,
+inner-focus,
+mold-breaker,
+', 'common', 1 , 'true' ),
+(539, 'sawk', '
+fighting,
+', '
+sturdy,
+inner-focus,
+mold-breaker,
+', 'common', 1 , 'true' ),
+(540, 'sewaddle', '
+bug,
+grass,
+', '
+swarm,
+chlorophyll,
+overcoat,
+', 'common', 1 , 'true' ),
+(541, 'swadloon', '
+bug,
+grass,
+', '
+leaf-guard,
+chlorophyll,
+overcoat,
+', 'common', 1 , 'true' ),
+(542, 'leavanny', '
+bug,
+grass,
+', '
+swarm,
+chlorophyll,
+overcoat,
+', 'common', 1 , 'true' ),
+(543, 'venipede', '
+bug,
+poison,
+', '
+poison-point,
+swarm,
+speed-boost,
+', 'common', 1 , 'true' ),
+(544, 'whirlipede', '
+bug,
+poison,
+', '
+poison-point,
+swarm,
+speed-boost,
+', 'common', 1 , 'true' ),
+(545, 'scolipede', '
+bug,
+poison,
+', '
+poison-point,
+swarm,
+speed-boost,
+', 'common', 1 , 'true' ),
+(546, 'cottonee', '
+grass,
+fairy,
+', '
+prankster,
+infiltrator,
+chlorophyll,
+', 'common', 1 , 'true' ),
+(547, 'whimsicott', '
+grass,
+fairy,
+', '
+prankster,
+infiltrator,
+chlorophyll,
+', 'common', 1 , 'true' ),
+(548, 'petilil', '
+grass,
+', '
+chlorophyll,
+own-tempo,
+leaf-guard,
+', 'common', 1 , 'true' ),
+(549, 'lilligant', '
+grass,
+', '
+chlorophyll,
+own-tempo,
+leaf-guard,
+', 'common', 1 , 'true' ),
+(550, 'basculin-red-striped', '
+water,
+', '
+reckless,
+adaptability,
+mold-breaker,
+', 'common', 1 , 'true' ),
+(551, 'sandile', '
+ground,
+dark,
+', '
+intimidate,
+moxie,
+anger-point,
+', 'common', 1 , 'true' ),
+(552, 'krokorok', '
+ground,
+dark,
+', '
+intimidate,
+moxie,
+anger-point,
+', 'common', 1 , 'true' ),
+(553, 'krookodile', '
+ground,
+dark,
+', '
+intimidate,
+moxie,
+anger-point,
+', 'common', 1 , 'true' ),
+(554, 'darumaka', '
+fire,
+', '
+hustle,
+inner-focus,
+', 'common', 1 , 'true' ),
+(555, 'darmanitan-standard', '
+fire,
+', '
+sheer-force,
+zen-mode,
+', 'common', 1 , 'true' ),
+(556, 'maractus', '
+grass,
+', '
+water-absorb,
+chlorophyll,
+storm-drain,
+', 'common', 1 , 'true' ),
+(557, 'dwebble', '
+bug,
+rock,
+', '
+sturdy,
+shell-armor,
+weak-armor,
+', 'common', 1 , 'true' ),
+(558, 'crustle', '
+bug,
+rock,
+', '
+sturdy,
+shell-armor,
+weak-armor,
+', 'common', 1 , 'true' ),
+(559, 'scraggy', '
+dark,
+fighting,
+', '
+shed-skin,
+moxie,
+intimidate,
+', 'common', 1 , 'true' ),
+(560, 'scrafty', '
+dark,
+fighting,
+', '
+shed-skin,
+moxie,
+intimidate,
+', 'common', 1 , 'true' ),
+(561, 'sigilyph', '
+psychic,
+flying,
+', '
+wonder-skin,
+magic-guard,
+tinted-lens,
+', 'common', 1 , 'true' ),
+(562, 'yamask', '
+ghost,
+', '
+mummy,
+', 'common', 1 , 'true' ),
+(563, 'cofagrigus', '
+ghost,
+', '
+mummy,
+', 'common', 1 , 'true' ),
+(564, 'tirtouga', '
+water,
+rock,
+', '
+solid-rock,
+sturdy,
+swift-swim,
+', 'common', 1 , 'true' ),
+(565, 'carracosta', '
+water,
+rock,
+', '
+solid-rock,
+sturdy,
+swift-swim,
+', 'common', 1 , 'true' ),
+(566, 'archen', '
+rock,
+flying,
+', '
+defeatist,
+', 'common', 1 , 'true' ),
+(567, 'archeops', '
+rock,
+flying,
+', '
+defeatist,
+', 'common', 1 , 'true' ),
+(568, 'trubbish', '
+poison,
+', '
+stench,
+sticky-hold,
+aftermath,
+', 'common', 1 , 'true' ),
+(569, 'garbodor', '
+poison,
+', '
+stench,
+weak-armor,
+aftermath,
+', 'common', 1 , 'true' ),
+(570, 'zorua', '
+dark,
+', '
+illusion,
+', 'common', 1 , 'true' ),
+(571, 'zoroark', '
+dark,
+', '
+illusion,
+', 'common', 1 , 'true' ),
+(572, 'minccino', '
+normal,
+', '
+cute-charm,
+technician,
+skill-link,
+', 'common', 1 , 'true' ),
+(573, 'cinccino', '
+normal,
+', '
+cute-charm,
+technician,
+skill-link,
+', 'common', 1 , 'true' ),
+(574, 'gothita', '
+psychic,
+', '
+frisk,
+competitive,
+shadow-tag,
+', 'common', 1 , 'true' ),
+(575, 'gothorita', '
+psychic,
+', '
+frisk,
+competitive,
+shadow-tag,
+', 'common', 1 , 'true' ),
+(576, 'gothitelle', '
+psychic,
+', '
+frisk,
+competitive,
+shadow-tag,
+', 'common', 1 , 'true' ),
+(577, 'solosis', '
+psychic,
+', '
+overcoat,
+magic-guard,
+regenerator,
+', 'common', 1 , 'true' ),
+(578, 'duosion', '
+psychic,
+', '
+overcoat,
+magic-guard,
+regenerator,
+', 'common', 1 , 'true' ),
+(579, 'reuniclus', '
+psychic,
+', '
+overcoat,
+magic-guard,
+regenerator,
+', 'common', 1 , 'true' ),
+(580, 'ducklett', '
+water,
+flying,
+', '
+keen-eye,
+big-pecks,
+hydration,
+', 'common', 1 , 'true' ),
+(581, 'swanna', '
+water,
+flying,
+', '
+keen-eye,
+big-pecks,
+hydration,
+', 'common', 1 , 'true' ),
+(582, 'vanillite', '
+ice,
+', '
+ice-body,
+snow-cloak,
+weak-armor,
+', 'common', 1 , 'true' ),
+(583, 'vanillish', '
+ice,
+', '
+ice-body,
+snow-cloak,
+weak-armor,
+', 'common', 1 , 'true' ),
+(584, 'vanilluxe', '
+ice,
+', '
+ice-body,
+snow-warning,
+weak-armor,
+', 'common', 1 , 'true' ),
+(585, 'deerling', '
+normal,
+grass,
+', '
+chlorophyll,
+sap-sipper,
+serene-grace,
+', 'common', 1 , 'true' ),
+(586, 'sawsbuck', '
+normal,
+grass,
+', '
+chlorophyll,
+sap-sipper,
+serene-grace,
+', 'common', 1 , 'true' ),
+(587, 'emolga', '
+electric,
+flying,
+', '
+static,
+motor-drive,
+', 'common', 1 , 'true' ),
+(588, 'karrablast', '
+bug,
+', '
+swarm,
+shed-skin,
+no-guard,
+', 'common', 1 , 'true' ),
+(589, 'escavalier', '
+bug,
+steel,
+', '
+swarm,
+shell-armor,
+overcoat,
+', 'common', 1 , 'true' ),
+(590, 'foongus', '
+grass,
+poison,
+', '
+effect-spore,
+regenerator,
+', 'common', 1 , 'true' ),
+(591, 'amoonguss', '
+grass,
+poison,
+', '
+effect-spore,
+regenerator,
+', 'common', 1 , 'true' ),
+(592, 'frillish', '
+water,
+ghost,
+', '
+water-absorb,
+cursed-body,
+damp,
+', 'common', 1 , 'true' ),
+(593, 'jellicent', '
+water,
+ghost,
+', '
+water-absorb,
+cursed-body,
+damp,
+', 'common', 1 , 'true' ),
+(594, 'alomomola', '
+water,
+', '
+healer,
+hydration,
+regenerator,
+', 'common', 1 , 'true' ),
+(595, 'joltik', '
+bug,
+electric,
+', '
+compound-eyes,
+unnerve,
+swarm,
+', 'common', 1 , 'true' ),
+(596, 'galvantula', '
+bug,
+electric,
+', '
+compound-eyes,
+unnerve,
+swarm,
+', 'common', 1 , 'true' ),
+(597, 'ferroseed', '
+grass,
+steel,
+', '
+iron-barbs,
+', 'common', 1 , 'true' ),
+(598, 'ferrothorn', '
+grass,
+steel,
+', '
+iron-barbs,
+anticipation,
+', 'common', 1 , 'true' ),
+(599, 'klink', '
+steel,
+', '
+plus,
+minus,
+clear-body,
+', 'common', 1 , 'true' ),
+(600, 'klang', '
+steel,
+', '
+plus,
+minus,
+clear-body,
+', 'common', 1 , 'true' ),
+(601, 'klinklang', '
+steel,
+', '
+plus,
+minus,
+clear-body,
+', 'common', 1 , 'true' ),
+(602, 'tynamo', '
+electric,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(603, 'eelektrik', '
+electric,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(604, 'eelektross', '
+electric,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(605, 'elgyem', '
+psychic,
+', '
+telepathy,
+synchronize,
+analytic,
+', 'common', 1 , 'true' ),
+(606, 'beheeyem', '
+psychic,
+', '
+telepathy,
+synchronize,
+analytic,
+', 'common', 1 , 'true' ),
+(607, 'litwick', '
+ghost,
+fire,
+', '
+flash-fire,
+flame-body,
+infiltrator,
+', 'common', 1 , 'true' ),
+(608, 'lampent', '
+ghost,
+fire,
+', '
+flash-fire,
+flame-body,
+infiltrator,
+', 'common', 1 , 'true' ),
+(609, 'chandelure', '
+ghost,
+fire,
+', '
+flash-fire,
+flame-body,
+infiltrator,
+', 'common', 1 , 'true' ),
+(610, 'axew', '
+dragon,
+', '
+rivalry,
+mold-breaker,
+unnerve,
+', 'common', 1 , 'true' ),
+(611, 'fraxure', '
+dragon,
+', '
+rivalry,
+mold-breaker,
+unnerve,
+', 'common', 1 , 'true' ),
+(612, 'haxorus', '
+dragon,
+', '
+rivalry,
+mold-breaker,
+unnerve,
+', 'common', 1 , 'true' ),
+(613, 'cubchoo', '
+ice,
+', '
+snow-cloak,
+slush-rush,
+rattled,
+', 'common', 1 , 'true' ),
+(614, 'beartic', '
+ice,
+', '
+snow-cloak,
+slush-rush,
+swift-swim,
+', 'common', 1 , 'true' ),
+(615, 'cryogonal', '
+ice,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(616, 'shelmet', '
+bug,
+', '
+hydration,
+shell-armor,
+overcoat,
+', 'common', 1 , 'true' ),
+(617, 'accelgor', '
+bug,
+', '
+hydration,
+sticky-hold,
+unburden,
+', 'common', 1 , 'true' ),
+(618, 'stunfisk', '
+ground,
+electric,
+', '
+static,
+limber,
+sand-veil,
+', 'common', 1 , 'true' ),
+(619, 'mienfoo', '
+fighting,
+', '
+inner-focus,
+regenerator,
+reckless,
+', 'common', 1 , 'true' ),
+(620, 'mienshao', '
+fighting,
+', '
+inner-focus,
+regenerator,
+reckless,
+', 'common', 1 , 'true' ),
+(621, 'druddigon', '
+dragon,
+', '
+rough-skin,
+sheer-force,
+mold-breaker,
+', 'common', 1 , 'true' ),
+(622, 'golett', '
+ground,
+ghost,
+', '
+iron-fist,
+klutz,
+no-guard,
+', 'common', 1 , 'true' ),
+(623, 'golurk', '
+ground,
+ghost,
+', '
+iron-fist,
+klutz,
+no-guard,
+', 'common', 1 , 'true' ),
+(624, 'pawniard', '
+dark,
+steel,
+', '
+defiant,
+inner-focus,
+pressure,
+', 'common', 1 , 'true' ),
+(625, 'bisharp', '
+dark,
+steel,
+', '
+defiant,
+inner-focus,
+pressure,
+', 'common', 1 , 'true' ),
+(626, 'bouffalant', '
+normal,
+', '
+reckless,
+sap-sipper,
+soundproof,
+', 'common', 1 , 'true' ),
+(627, 'rufflet', '
+normal,
+flying,
+', '
+keen-eye,
+sheer-force,
+hustle,
+', 'common', 1 , 'true' ),
+(628, 'braviary', '
+normal,
+flying,
+', '
+keen-eye,
+sheer-force,
+defiant,
+', 'common', 1 , 'true' ),
+(629, 'vullaby', '
+dark,
+flying,
+', '
+big-pecks,
+overcoat,
+weak-armor,
+', 'common', 1 , 'true' ),
+(630, 'mandibuzz', '
+dark,
+flying,
+', '
+big-pecks,
+overcoat,
+weak-armor,
+', 'common', 1 , 'true' ),
+(631, 'heatmor', '
+fire,
+', '
+gluttony,
+flash-fire,
+white-smoke,
+', 'common', 1 , 'true' ),
+(632, 'durant', '
+bug,
+steel,
+', '
+swarm,
+hustle,
+truant,
+', 'common', 1 , 'true' ),
+(633, 'deino', '
+dark,
+dragon,
+', '
+hustle,
+', 'common', 1 , 'true' ),
+(634, 'zweilous', '
+dark,
+dragon,
+', '
+hustle,
+', 'common', 1 , 'true' ),
+(635, 'hydreigon', '
+dark,
+dragon,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(636, 'larvesta', '
+bug,
+fire,
+', '
+flame-body,
+swarm,
+', 'common', 1 , 'true' ),
+(637, 'volcarona', '
+bug,
+fire,
+', '
+flame-body,
+swarm,
+', 'common', 1 , 'true' ),
+(638, 'cobalion', '
+steel,
+fighting,
+', '
+justified,
+', 'common', 1 , 'true' ),
+(639, 'terrakion', '
+rock,
+fighting,
+', '
+justified,
+', 'common', 1 , 'true' ),
+(640, 'virizion', '
+grass,
+fighting,
+', '
+justified,
+', 'common', 1 , 'true' ),
+(641, 'tornadus-incarnate', '
+flying,
+', '
+prankster,
+defiant,
+', 'common', 1 , 'true' ),
+(642, 'thundurus-incarnate', '
+electric,
+flying,
+', '
+prankster,
+defiant,
+', 'common', 1 , 'true' ),
+(643, 'reshiram', '
+dragon,
+fire,
+', '
+turboblaze,
+', 'common', 1 , 'true' ),
+(644, 'zekrom', '
+dragon,
+electric,
+', '
+teravolt,
+', 'common', 1 , 'true' ),
+(645, 'landorus-incarnate', '
+ground,
+flying,
+', '
+sand-force,
+sheer-force,
+', 'common', 1 , 'true' ),
+(646, 'kyurem', '
+dragon,
+ice,
+', '
+pressure,
+', 'common', 1 , 'true' ),
+(647, 'keldeo-ordinary', '
+water,
+fighting,
+', '
+justified,
+', 'common', 1 , 'true' ),
+(648, 'meloetta-aria', '
+normal,
+psychic,
+', '
+serene-grace,
+', 'common', 1 , 'true' ),
+(649, 'genesect', '
+bug,
+steel,
+', '
+download,
+', 'common', 1 , 'true' ),
+(650, 'chespin', '
+grass,
+', '
+overgrow,
+bulletproof,
+', 'common', 1 , 'true' ),
+(651, 'quilladin', '
+grass,
+', '
+overgrow,
+bulletproof,
+', 'common', 1 , 'true' ),
+(652, 'chesnaught', '
+grass,
+fighting,
+', '
+overgrow,
+bulletproof,
+', 'common', 1 , 'true' ),
+(653, 'fennekin', '
+fire,
+', '
+blaze,
+magician,
+', 'common', 1 , 'true' ),
+(654, 'braixen', '
+fire,
+', '
+blaze,
+magician,
+', 'common', 1 , 'true' ),
+(655, 'delphox', '
+fire,
+psychic,
+', '
+blaze,
+magician,
+', 'common', 1 , 'true' ),
+(656, 'froakie', '
+water,
+', '
+torrent,
+protean,
+', 'common', 1 , 'true' ),
+(657, 'frogadier', '
+water,
+', '
+torrent,
+protean,
+', 'common', 1 , 'true' ),
+(658, 'greninja', '
+water,
+dark,
+', '
+torrent,
+protean,
+', 'common', 1 , 'true' ),
+(659, 'bunnelby', '
+normal,
+', '
+pickup,
+cheek-pouch,
+huge-power,
+', 'common', 1 , 'true' ),
+(660, 'diggersby', '
+normal,
+ground,
+', '
+pickup,
+cheek-pouch,
+huge-power,
+', 'common', 1 , 'true' ),
+(661, 'fletchling', '
+normal,
+flying,
+', '
+big-pecks,
+gale-wings,
+', 'common', 1 , 'true' ),
+(662, 'fletchinder', '
+fire,
+flying,
+', '
+flame-body,
+gale-wings,
+', 'common', 1 , 'true' ),
+(663, 'talonflame', '
+fire,
+flying,
+', '
+flame-body,
+gale-wings,
+', 'common', 1 , 'true' ),
+(664, 'scatterbug', '
+bug,
+', '
+shield-dust,
+compound-eyes,
+friend-guard,
+', 'common', 1 , 'true' ),
+(665, 'spewpa', '
+bug,
+', '
+shed-skin,
+friend-guard,
+', 'common', 1 , 'true' ),
+(666, 'vivillon', '
+bug,
+flying,
+', '
+shield-dust,
+compound-eyes,
+friend-guard,
+', 'common', 1 , 'true' ),
+(667, 'litleo', '
+fire,
+normal,
+', '
+rivalry,
+unnerve,
+moxie,
+', 'common', 1 , 'true' ),
+(668, 'pyroar', '
+fire,
+normal,
+', '
+rivalry,
+unnerve,
+moxie,
+', 'common', 1 , 'true' ),
+(669, 'flabebe', '
+fairy,
+', '
+flower-veil,
+symbiosis,
+', 'common', 1 , 'true' ),
+(670, 'floette', '
+fairy,
+', '
+flower-veil,
+symbiosis,
+', 'common', 1 , 'true' ),
+(671, 'florges', '
+fairy,
+', '
+flower-veil,
+symbiosis,
+', 'common', 1 , 'true' ),
+(672, 'skiddo', '
+grass,
+', '
+sap-sipper,
+grass-pelt,
+', 'common', 1 , 'true' ),
+(673, 'gogoat', '
+grass,
+', '
+sap-sipper,
+grass-pelt,
+', 'common', 1 , 'true' ),
+(674, 'pancham', '
+fighting,
+', '
+iron-fist,
+mold-breaker,
+scrappy,
+', 'common', 1 , 'true' ),
+(675, 'pangoro', '
+fighting,
+dark,
+', '
+iron-fist,
+mold-breaker,
+scrappy,
+', 'common', 1 , 'true' ),
+(676, 'furfrou', '
+normal,
+', '
+fur-coat,
+', 'common', 1 , 'true' ),
+(677, 'espurr', '
+psychic,
+', '
+keen-eye,
+infiltrator,
+own-tempo,
+', 'common', 1 , 'true' ),
+(678, 'meowstic-male', '
+psychic,
+', '
+keen-eye,
+infiltrator,
+prankster,
+', 'common', 1 , 'true' ),
+(679, 'honedge', '
+steel,
+ghost,
+', '
+no-guard,
+', 'common', 1 , 'true' ),
+(680, 'doublade', '
+steel,
+ghost,
+', '
+no-guard,
+', 'common', 1 , 'true' ),
+(681, 'aegislash-shield', '
+steel,
+ghost,
+', '
+stance-change,
+', 'common', 1 , 'true' ),
+(682, 'spritzee', '
+fairy,
+', '
+healer,
+aroma-veil,
+', 'common', 1 , 'true' ),
+(683, 'aromatisse', '
+fairy,
+', '
+healer,
+aroma-veil,
+', 'common', 1 , 'true' ),
+(684, 'swirlix', '
+fairy,
+', '
+sweet-veil,
+unburden,
+', 'common', 1 , 'true' ),
+(685, 'slurpuff', '
+fairy,
+', '
+sweet-veil,
+unburden,
+', 'common', 1 , 'true' ),
+(686, 'inkay', '
+dark,
+psychic,
+', '
+contrary,
+suction-cups,
+infiltrator,
+', 'common', 1 , 'true' ),
+(687, 'malamar', '
+dark,
+psychic,
+', '
+contrary,
+suction-cups,
+infiltrator,
+', 'common', 1 , 'true' ),
+(688, 'binacle', '
+rock,
+water,
+', '
+tough-claws,
+sniper,
+pickpocket,
+', 'common', 1 , 'true' ),
+(689, 'barbaracle', '
+rock,
+water,
+', '
+tough-claws,
+sniper,
+pickpocket,
+', 'common', 1 , 'true' ),
+(690, 'skrelp', '
+poison,
+water,
+', '
+poison-point,
+poison-touch,
+adaptability,
+', 'common', 1 , 'true' ),
+(691, 'dragalge', '
+poison,
+dragon,
+', '
+poison-point,
+poison-touch,
+adaptability,
+', 'common', 1 , 'true' ),
+(692, 'clauncher', '
+water,
+', '
+mega-launcher,
+', 'common', 1 , 'true' ),
+(693, 'clawitzer', '
+water,
+', '
+mega-launcher,
+', 'common', 1 , 'true' ),
+(694, 'helioptile', '
+electric,
+normal,
+', '
+dry-skin,
+sand-veil,
+solar-power,
+', 'common', 1 , 'true' ),
+(695, 'heliolisk', '
+electric,
+normal,
+', '
+dry-skin,
+sand-veil,
+solar-power,
+', 'common', 1 , 'true' ),
+(696, 'tyrunt', '
+rock,
+dragon,
+', '
+strong-jaw,
+sturdy,
+', 'common', 1 , 'true' ),
+(697, 'tyrantrum', '
+rock,
+dragon,
+', '
+strong-jaw,
+rock-head,
+', 'common', 1 , 'true' ),
+(698, 'amaura', '
+rock,
+ice,
+', '
+refrigerate,
+snow-warning,
+', 'common', 1 , 'true' ),
+(699, 'aurorus', '
+rock,
+ice,
+', '
+refrigerate,
+snow-warning,
+', 'common', 1 , 'true' ),
+(700, 'sylveon', '
+fairy,
+', '
+cute-charm,
+pixilate,
+', 'common', 1 , 'true' ),
+(701, 'hawlucha', '
+fighting,
+flying,
+', '
+limber,
+unburden,
+mold-breaker,
+', 'common', 1 , 'true' ),
+(702, 'dedenne', '
+electric,
+fairy,
+', '
+cheek-pouch,
+pickup,
+plus,
+', 'common', 1 , 'true' ),
+(703, 'carbink', '
+rock,
+fairy,
+', '
+clear-body,
+sturdy,
+', 'common', 1 , 'true' ),
+(704, 'goomy', '
+dragon,
+', '
+sap-sipper,
+hydration,
+gooey,
+', 'common', 1 , 'true' ),
+(705, 'sliggoo', '
+dragon,
+', '
+sap-sipper,
+hydration,
+gooey,
+', 'common', 1 , 'true' ),
+(706, 'goodra', '
+dragon,
+', '
+sap-sipper,
+hydration,
+gooey,
+', 'common', 1 , 'true' ),
+(707, 'klefki', '
+steel,
+fairy,
+', '
+prankster,
+magician,
+', 'common', 1 , 'true' ),
+(708, 'phantump', '
+ghost,
+grass,
+', '
+natural-cure,
+frisk,
+harvest,
+', 'common', 1 , 'true' ),
+(709, 'trevenant', '
+ghost,
+grass,
+', '
+natural-cure,
+frisk,
+harvest,
+', 'common', 1 , 'true' ),
+(710, 'pumpkaboo-average', '
+ghost,
+grass,
+', '
+pickup,
+frisk,
+insomnia,
+', 'common', 1 , 'true' ),
+(711, 'gourgeist-average', '
+ghost,
+grass,
+', '
+pickup,
+frisk,
+insomnia,
+', 'common', 1 , 'true' ),
+(712, 'bergmite', '
+ice,
+', '
+own-tempo,
+ice-body,
+sturdy,
+', 'common', 1 , 'true' ),
+(713, 'avalugg', '
+ice,
+', '
+own-tempo,
+ice-body,
+sturdy,
+', 'common', 1 , 'true' ),
+(714, 'noibat', '
+flying,
+dragon,
+', '
+frisk,
+infiltrator,
+telepathy,
+', 'common', 1 , 'true' ),
+(715, 'noivern', '
+flying,
+dragon,
+', '
+frisk,
+infiltrator,
+telepathy,
+', 'common', 1 , 'true' ),
+(716, 'xerneas', '
+fairy,
+', '
+fairy-aura,
+', 'common', 1 , 'true' ),
+(717, 'yveltal', '
+dark,
+flying,
+', '
+dark-aura,
+', 'common', 1 , 'true' ),
+(718, 'zygarde', '
+dragon,
+ground,
+', '
+aura-break,
+', 'common', 1 , 'true' ),
+(719, 'diancie', '
+rock,
+fairy,
+', '
+clear-body,
+', 'common', 1 , 'true' ),
+(720, 'hoopa', '
+psychic,
+ghost,
+', '
+magician,
+', 'common', 1 , 'true' ),
+(721, 'volcanion', '
+fire,
+water,
+', '
+water-absorb,
+', 'common', 1 , 'true' ),
+(722, 'rowlet', '
+grass,
+flying,
+', '
+overgrow,
+long-reach,
+', 'common', 1 , 'true' ),
+(723, 'dartrix', '
+grass,
+flying,
+', '
+overgrow,
+long-reach,
+', 'common', 1 , 'true' ),
+(724, 'decidueye', '
+grass,
+ghost,
+', '
+overgrow,
+long-reach,
+', 'common', 1 , 'true' ),
+(725, 'litten', '
+fire,
+', '
+blaze,
+intimidate,
+', 'common', 1 , 'true' ),
+(726, 'torracat', '
+fire,
+', '
+blaze,
+intimidate,
+', 'common', 1 , 'true' ),
+(727, 'incineroar', '
+fire,
+dark,
+', '
+blaze,
+intimidate,
+', 'common', 1 , 'true' ),
+(728, 'popplio', '
+water,
+', '
+torrent,
+liquid-voice,
+', 'common', 1 , 'true' ),
+(729, 'brionne', '
+water,
+', '
+torrent,
+liquid-voice,
+', 'common', 1 , 'true' ),
+(730, 'primarina', '
+water,
+fairy,
+', '
+torrent,
+liquid-voice,
+', 'common', 1 , 'true' ),
+(731, 'pikipek', '
+normal,
+flying,
+', '
+keen-eye,
+skill-link,
+pickup,
+', 'common', 1 , 'true' ),
+(732, 'trumbeak', '
+normal,
+flying,
+', '
+keen-eye,
+skill-link,
+pickup,
+', 'common', 1 , 'true' ),
+(733, 'toucannon', '
+normal,
+flying,
+', '
+keen-eye,
+skill-link,
+sheer-force,
+', 'common', 1 , 'true' ),
+(734, 'yungoos', '
+normal,
+', '
+stakeout,
+strong-jaw,
+adaptability,
+', 'common', 1 , 'true' ),
+(735, 'gumshoos', '
+normal,
+', '
+stakeout,
+strong-jaw,
+adaptability,
+', 'common', 1 , 'true' ),
+(736, 'grubbin', '
+bug,
+', '
+swarm,
+', 'common', 1 , 'true' ),
+(737, 'charjabug', '
+bug,
+electric,
+', '
+battery,
+', 'common', 1 , 'true' ),
+(738, 'vikavolt', '
+bug,
+electric,
+', '
+levitate,
+', 'common', 1 , 'true' ),
+(739, 'crabrawler', '
+fighting,
+', '
+hyper-cutter,
+iron-fist,
+anger-point,
+', 'common', 1 , 'true' ),
+(740, 'crabominable', '
+fighting,
+ice,
+', '
+hyper-cutter,
+iron-fist,
+anger-point,
+', 'common', 1 , 'true' ),
+(741, 'oricorio-baile', '
+fire,
+flying,
+', '
+dancer,
+', 'common', 1 , 'true' ),
+(742, 'cutiefly', '
+bug,
+fairy,
+', '
+honey-gather,
+shield-dust,
+sweet-veil,
+', 'common', 1 , 'true' ),
+(743, 'ribombee', '
+bug,
+fairy,
+', '
+honey-gather,
+shield-dust,
+sweet-veil,
+', 'common', 1 , 'true' ),
+(744, 'rockruff', '
+rock,
+', '
+keen-eye,
+vital-spirit,
+steadfast,
+', 'common', 1 , 'true' ),
+(745, 'lycanroc-midday', '
+rock,
+', '
+keen-eye,
+sand-rush,
+steadfast,
+', 'common', 1 , 'true' ),
+(746, 'wishiwashi-solo', '
+water,
+', '
+schooling,
+', 'common', 1 , 'true' ),
+(747, 'mareanie', '
+poison,
+water,
+', '
+merciless,
+limber,
+regenerator,
+', 'common', 1 , 'true' ),
+(748, 'toxapex', '
+poison,
+water,
+', '
+merciless,
+limber,
+regenerator,
+', 'common', 1 , 'true' ),
+(749, 'mudbray', '
+ground,
+', '
+own-tempo,
+stamina,
+inner-focus,
+', 'common', 1 , 'true' ),
+(750, 'mudsdale', '
+ground,
+', '
+own-tempo,
+stamina,
+inner-focus,
+', 'common', 1 , 'true' ),
+(751, 'dewpider', '
+water,
+bug,
+', '
+water-bubble,
+water-absorb,
+', 'common', 1 , 'true' ),
+(752, 'araquanid', '
+water,
+bug,
+', '
+water-bubble,
+water-absorb,
+', 'common', 1 , 'true' ),
+(753, 'fomantis', '
+grass,
+', '
+leaf-guard,
+contrary,
+', 'common', 1 , 'true' ),
+(754, 'lurantis', '
+grass,
+', '
+leaf-guard,
+contrary,
+', 'common', 1 , 'true' ),
+(755, 'morelull', '
+grass,
+fairy,
+', '
+illuminate,
+effect-spore,
+rain-dish,
+', 'common', 1 , 'true' ),
+(756, 'shiinotic', '
+grass,
+fairy,
+', '
+illuminate,
+effect-spore,
+rain-dish,
+', 'common', 1 , 'true' ),
+(757, 'salandit', '
+poison,
+fire,
+', '
+corrosion,
+oblivious,
+', 'common', 1 , 'true' ),
+(758, 'salazzle', '
+poison,
+fire,
+', '
+corrosion,
+oblivious,
+', 'common', 1 , 'true' ),
+(759, 'stufful', '
+normal,
+fighting,
+', '
+fluffy,
+klutz,
+cute-charm,
+', 'common', 1 , 'true' ),
+(760, 'bewear', '
+normal,
+fighting,
+', '
+fluffy,
+klutz,
+unnerve,
+', 'common', 1 , 'true' ),
+(761, 'bounsweet', '
+grass,
+', '
+leaf-guard,
+oblivious,
+sweet-veil,
+', 'common', 1 , 'true' ),
+(762, 'steenee', '
+grass,
+', '
+leaf-guard,
+oblivious,
+sweet-veil,
+', 'common', 1 , 'true' ),
+(763, 'tsareena', '
+grass,
+', '
+leaf-guard,
+queenly-majesty,
+sweet-veil,
+', 'common', 1 , 'true' ),
+(764, 'comfey', '
+fairy,
+', '
+flower-veil,
+triage,
+natural-cure,
+', 'common', 1 , 'true' ),
+(765, 'oranguru', '
+normal,
+psychic,
+', '
+inner-focus,
+telepathy,
+symbiosis,
+', 'common', 1 , 'true' ),
+(766, 'passimian', '
+fighting,
+', '
+receiver,
+defiant,
+', 'common', 1 , 'true' ),
+(767, 'wimpod', '
+bug,
+water,
+', '
+wimp-out,
+', 'common', 1 , 'true' ),
+(768, 'golisopod', '
+bug,
+water,
+', '
+emergency-exit,
+', 'common', 1 , 'true' ),
+(769, 'sandygast', '
+ghost,
+ground,
+', '
+water-compaction,
+sand-veil,
+', 'common', 1 , 'true' ),
+(770, 'palossand', '
+ghost,
+ground,
+', '
+water-compaction,
+sand-veil,
+', 'common', 1 , 'true' ),
+(771, 'pyukumuku', '
+water,
+', '
+innards-out,
+unaware,
+', 'common', 1 , 'true' ),
+(772, 'type-null', '
+normal,
+', '
+battle-armor,
+', 'common', 1 , 'true' ),
+(773, 'silvally', '
+normal,
+', '
+rks-system,
+', 'common', 1 , 'true' ),
+(774, 'minior-red-meteor', '
+rock,
+flying,
+', '
+shields-down,
+', 'common', 1 , 'true' ),
+(775, 'komala', '
+normal,
+', '
+comatose,
+', 'common', 1 , 'true' ),
+(776, 'turtonator', '
+fire,
+dragon,
+', '
+shell-armor,
+', 'common', 1 , 'true' ),
+(777, 'togedemaru', '
+electric,
+steel,
+', '
+iron-barbs,
+lightning-rod,
+sturdy,
+', 'common', 1 , 'true' ),
+(778, 'mimikyu-disguised', '
+ghost,
+fairy,
+', '
+disguise,
+', 'common', 1 , 'true' ),
+(779, 'bruxish', '
+water,
+psychic,
+', '
+dazzling,
+strong-jaw,
+wonder-skin,
+', 'common', 1 , 'true' ),
+(780, 'drampa', '
+normal,
+dragon,
+', '
+berserk,
+sap-sipper,
+cloud-nine,
+', 'common', 1 , 'true' ),
+(781, 'dhelmise', '
+ghost,
+grass,
+', '
+steelworker,
+', 'common', 1 , 'true' ),
+(782, 'jangmo-o', '
+dragon,
+', '
+bulletproof,
+soundproof,
+overcoat,
+', 'common', 1 , 'true' ),
+(783, 'hakamo-o', '
+dragon,
+fighting,
+', '
+bulletproof,
+soundproof,
+overcoat,
+', 'common', 1 , 'true' ),
+(784, 'kommo-o', '
+dragon,
+fighting,
+', '
+bulletproof,
+soundproof,
+overcoat,
+', 'common', 1 , 'true' ),
+(785, 'tapu-koko', '
+electric,
+fairy,
+', '
+electric-surge,
+telepathy,
+', 'common', 1 , 'true' ),
+(786, 'tapu-lele', '
+psychic,
+fairy,
+', '
+psychic-surge,
+telepathy,
+', 'common', 1 , 'true' ),
+(787, 'tapu-bulu', '
+grass,
+fairy,
+', '
+grassy-surge,
+telepathy,
+', 'common', 1 , 'true' ),
+(788, 'tapu-fini', '
+water,
+fairy,
+', '
+misty-surge,
+telepathy,
+', 'common', 1 , 'true' ),
+(789, 'cosmog', '
+psychic,
+', '
+unaware,
+', 'common', 1 , 'true' ),
+(790, 'cosmoem', '
+psychic,
+', '
+sturdy,
+', 'common', 1 , 'true' ),
+(791, 'solgaleo', '
+psychic,
+steel,
+', '
+full-metal-body,
+', 'common', 1 , 'true' ),
+(792, 'lunala', '
+psychic,
+ghost,
+', '
+shadow-shield,
+', 'common', 1 , 'true' ),
+(793, 'nihilego', '
+rock,
+poison,
+', '
+beast-boost,
+', 'common', 1 , 'true' ),
+(794, 'buzzwole', '
+bug,
+fighting,
+', '
+beast-boost,
+', 'common', 1 , 'true' ),
+(795, 'pheromosa', '
+bug,
+fighting,
+', '
+beast-boost,
+', 'common', 1 , 'true' ),
+(796, 'xurkitree', '
+electric,
+', '
+beast-boost,
+', 'common', 1 , 'true' ),
+(797, 'celesteela', '
+steel,
+flying,
+', '
+beast-boost,
+', 'common', 1 , 'true' ),
+(798, 'kartana', '
+grass,
+steel,
+', '
+beast-boost,
+', 'common', 1 , 'true' ),
+(799, 'guzzlord', '
+dark,
+dragon,
+', '
+beast-boost,
+', 'common', 1 , 'true' ),
+(800, 'necrozma', '
+psychic,
+', '
+prism-armor,
+', 'common', 1 , 'true' ),
+(801, 'magearna', '
+steel,
+fairy,
+', '
+soul-heart,
+', 'common', 1 , 'true' ),
+(802, 'marshadow', '
+fighting,
+ghost,
+', '
+technician,
+', 'common', 1 , 'true' ),
+(803, 'poipole', '
+poison,
+', '
+beast-boost,
+', 'common', 1 , 'true' ),
+(804, 'naganadel', '
+poison,
+dragon,
+', '
+beast-boost,
+', 'common', 1 , 'true' ),
+(805, 'stakataka', '
+rock,
+steel,
+', '
+beast-boost,
+', 'common', 1 , 'true' ),
+(806, 'blacephalon', '
+fire,
+ghost,
+', '
+beast-boost,
+', 'common', 1 , 'true' ),
+(807, 'zeraora', '
+electric,
+', '
+volt-absorb,
+', 'common', 1 , 'true' ),
+(808, 'meltan', '
+steel,
+', '
+magnet-pull,
+', 'common', 1 , 'true' ),
+(809, 'melmetal', '
+steel,
+', '
+iron-fist,
+', 'common', 1 , 'true' ),
+(810, 'grookey', '
+grass,
+', '
+overgrow,
+grassy-surge,
+', 'common', 1 , 'true' ),
+(811, 'thwackey', '
+grass,
+', '
+overgrow,
+grassy-surge,
+', 'common', 1 , 'true' ),
+(812, 'rillaboom', '
+grass,
+', '
+overgrow,
+grassy-surge,
+', 'common', 1 , 'true' ),
+(813, 'scorbunny', '
+fire,
+', '
+blaze,
+libero,
+', 'common', 1 , 'true' ),
+(814, 'raboot', '
+fire,
+', '
+blaze,
+libero,
+', 'common', 1 , 'true' ),
+(815, 'cinderace', '
+fire,
+', '
+blaze,
+libero,
+', 'common', 1 , 'true' ),
+(816, 'sobble', '
+water,
+', '
+torrent,
+sniper,
+', 'common', 1 , 'true' ),
+(817, 'drizzile', '
+water,
+', '
+torrent,
+sniper,
+', 'common', 1 , 'true' ),
+(818, 'inteleon', '
+water,
+', '
+torrent,
+sniper,
+', 'common', 1 , 'true' ),
+(819, 'skwovet', '
+normal,
+', '
+cheek-pouch,
+gluttony,
+', 'common', 1 , 'true' ),
+(820, 'greedent', '
+normal,
+', '
+cheek-pouch,
+gluttony,
+', 'common', 1 , 'true' ),
+(821, 'rookidee', '
+flying,
+', '
+keen-eye,
+unnerve,
+big-pecks,
+', 'common', 1 , 'true' ),
+(822, 'corvisquire', '
+flying,
+', '
+keen-eye,
+unnerve,
+big-pecks,
+', 'common', 1 , 'true' ),
+(823, 'corviknight', '
+flying,
+steel,
+', '
+pressure,
+unnerve,
+mirror-armor,
+', 'common', 1 , 'true' ),
+(824, 'blipbug', '
+bug,
+', '
+swarm,
+compound-eyes,
+telepathy,
+', 'common', 1 , 'true' ),
+(825, 'dottler', '
+bug,
+psychic,
+', '
+swarm,
+compound-eyes,
+telepathy,
+', 'common', 1 , 'true' ),
+(826, 'orbeetle', '
+bug,
+psychic,
+', '
+swarm,
+frisk,
+telepathy,
+', 'common', 1 , 'true' ),
+(827, 'nickit', '
+dark,
+', '
+run-away,
+unburden,
+stakeout,
+', 'common', 1 , 'true' ),
+(828, 'thievul', '
+dark,
+', '
+run-away,
+unburden,
+stakeout,
+', 'common', 1 , 'true' ),
+(829, 'gossifleur', '
+grass,
+', '
+cotton-down,
+regenerator,
+effect-spore,
+', 'common', 1 , 'true' ),
+(830, 'eldegoss', '
+grass,
+', '
+cotton-down,
+regenerator,
+effect-spore,
+', 'common', 1 , 'true' ),
+(831, 'wooloo', '
+normal,
+', '
+fluffy,
+run-away,
+bulletproof,
+', 'common', 1 , 'true' ),
+(832, 'dubwool', '
+normal,
+', '
+fluffy,
+run-away,
+bulletproof,
+', 'common', 1 , 'true' ),
+(833, 'chewtle', '
+water,
+', '
+strong-jaw,
+shell-armor,
+swift-swim,
+', 'common', 1 , 'true' ),
+(834, 'drednaw', '
+water,
+rock,
+', '
+strong-jaw,
+shell-armor,
+swift-swim,
+', 'common', 1 , 'true' ),
+(835, 'yamper', '
+electric,
+', '
+ball-fetch,
+rattled,
+', 'common', 1 , 'true' ),
+(836, 'boltund', '
+electric,
+', '
+strong-jaw,
+competitive,
+', 'common', 1 , 'true' ),
+(837, 'rolycoly', '
+rock,
+', '
+steam-engine,
+heatproof,
+flash-fire,
+', 'common', 1 , 'true' ),
+(838, 'carkol', '
+rock,
+fire,
+', '
+steam-engine,
+flame-body,
+flash-fire,
+', 'common', 1 , 'true' ),
+(839, 'coalossal', '
+rock,
+fire,
+', '
+steam-engine,
+flame-body,
+flash-fire,
+', 'common', 1 , 'true' ),
+(840, 'applin', '
+grass,
+dragon,
+', '
+ripen,
+gluttony,
+bulletproof,
+', 'common', 1 , 'true' ),
+(841, 'flapple', '
+grass,
+dragon,
+', '
+ripen,
+gluttony,
+hustle,
+', 'common', 1 , 'true' ),
+(842, 'appletun', '
+grass,
+dragon,
+', '
+ripen,
+gluttony,
+thick-fat,
+', 'common', 1 , 'true' ),
+(843, 'silicobra', '
+ground,
+', '
+sand-spit,
+shed-skin,
+sand-veil,
+', 'common', 1 , 'true' ),
+(844, 'sandaconda', '
+ground,
+', '
+sand-spit,
+shed-skin,
+sand-veil,
+', 'common', 1 , 'true' ),
+(845, 'cramorant', '
+flying,
+water,
+', '
+gulp-missile,
+', 'common', 1 , 'true' ),
+(846, 'arrokuda', '
+water,
+', '
+swift-swim,
+propeller-tail,
+', 'common', 1 , 'true' ),
+(847, 'barraskewda', '
+water,
+', '
+swift-swim,
+propeller-tail,
+', 'common', 1 , 'true' ),
+(848, 'toxel', '
+electric,
+poison,
+', '
+rattled,
+static,
+klutz,
+', 'common', 1 , 'true' ),
+(849, 'toxtricity-amped', '
+electric,
+poison,
+', '
+punk-rock,
+plus,
+technician,
+', 'common', 1 , 'true' ),
+(850, 'sizzlipede', '
+fire,
+bug,
+', '
+flash-fire,
+white-smoke,
+flame-body,
+', 'common', 1 , 'true' ),
+(851, 'centiskorch', '
+fire,
+bug,
+', '
+flash-fire,
+white-smoke,
+flame-body,
+', 'common', 1 , 'true' ),
+(852, 'clobbopus', '
+fighting,
+', '
+limber,
+technician,
+', 'common', 1 , 'true' ),
+(853, 'grapploct', '
+fighting,
+', '
+limber,
+technician,
+', 'common', 1 , 'true' ),
+(854, 'sinistea', '
+ghost,
+', '
+weak-armor,
+cursed-body,
+', 'common', 1 , 'true' ),
+(855, 'polteageist', '
+ghost,
+', '
+weak-armor,
+cursed-body,
+', 'common', 1 , 'true' ),
+(856, 'hatenna', '
+psychic,
+', '
+healer,
+anticipation,
+magic-bounce,
+', 'common', 1 , 'true' ),
+(857, 'hattrem', '
+psychic,
+', '
+healer,
+anticipation,
+magic-bounce,
+', 'common', 1 , 'true' ),
+(858, 'hatterene', '
+psychic,
+fairy,
+', '
+healer,
+anticipation,
+magic-bounce,
+', 'common', 1 , 'true' ),
+(859, 'impidimp', '
+dark,
+fairy,
+', '
+prankster,
+frisk,
+pickpocket,
+', 'common', 1 , 'true' ),
+(860, 'morgrem', '
+dark,
+fairy,
+', '
+prankster,
+frisk,
+pickpocket,
+', 'common', 1 , 'true' ),
+(861, 'grimmsnarl', '
+dark,
+fairy,
+', '
+prankster,
+frisk,
+pickpocket,
+', 'common', 1 , 'true' ),
+(862, 'obstagoon', '
+dark,
+normal,
+', '
+reckless,
+guts,
+defiant,
+', 'common', 1 , 'true' ),
+(863, 'perrserker', '
+steel,
+', '
+battle-armor,
+tough-claws,
+steely-spirit,
+', 'common', 1 , 'true' ),
+(864, 'cursola', '
+ghost,
+', '
+weak-armor,
+perish-body,
+', 'common', 1 , 'true' ),
+(865, 'sirfetchd', '
+fighting,
+', '
+steadfast,
+scrappy,
+', 'common', 1 , 'true' ),
+(866, 'mr-rime', '
+ice,
+psychic,
+', '
+tangled-feet,
+screen-cleaner,
+ice-body,
+', 'common', 1 , 'true' ),
+(867, 'runerigus', '
+ground,
+ghost,
+', '
+wandering-spirit,
+', 'common', 1 , 'true' ),
+(868, 'milcery', '
+fairy,
+', '
+sweet-veil,
+aroma-veil,
+', 'common', 1 , 'true' ),
+(869, 'alcremie', '
+fairy,
+', '
+sweet-veil,
+aroma-veil,
+', 'common', 1 , 'true' ),
+(870, 'falinks', '
+fighting,
+', '
+battle-armor,
+defiant,
+', 'common', 1 , 'true' ),
+(871, 'pincurchin', '
+electric,
+', '
+lightning-rod,
+electric-surge,
+', 'common', 1 , 'true' ),
+(872, 'snom', '
+ice,
+bug,
+', '
+shield-dust,
+ice-scales,
+', 'common', 1 , 'true' ),
+(873, 'frosmoth', '
+ice,
+bug,
+', '
+shield-dust,
+ice-scales,
+', 'common', 1 , 'true' ),
+(874, 'stonjourner', '
+rock,
+', '
+power-spot,
+', 'common', 1 , 'true' ),
+(875, 'eiscue-ice', '
+ice,
+', '
+ice-face,
+', 'common', 1 , 'true' ),
+(876, 'indeedee-male', '
+psychic,
+normal,
+', '
+inner-focus,
+synchronize,
+psychic-surge,
+', 'common', 1 , 'true' ),
+(877, 'morpeko', '
+electric,
+dark,
+', '
+hunger-switch,
+', 'common', 1 , 'true' ),
+(878, 'cufant', '
+steel,
+', '
+sheer-force,
+heavy-metal,
+', 'common', 1 , 'true' ),
+(879, 'copperajah', '
+steel,
+', '
+sheer-force,
+heavy-metal,
+', 'common', 1 , 'true' ),
+(880, 'dracozolt', '
+electric,
+dragon,
+', '
+volt-absorb,
+hustle,
+sand-rush,
+', 'common', 1 , 'true' ),
+(881, 'arctozolt', '
+electric,
+ice,
+', '
+volt-absorb,
+static,
+slush-rush,
+', 'common', 1 , 'true' ),
+(882, 'dracovish', '
+water,
+dragon,
+', '
+water-absorb,
+strong-jaw,
+sand-rush,
+', 'common', 1 , 'true' ),
+(883, 'arctovish', '
+water,
+ice,
+', '
+water-absorb,
+ice-body,
+slush-rush,
+', 'common', 1 , 'true' ),
+(884, 'duraludon', '
+steel,
+dragon,
+', '
+light-metal,
+heavy-metal,
+stalwart,
+', 'common', 1 , 'true' ),
+(885, 'dreepy', '
+dragon,
+ghost,
+', '
+clear-body,
+infiltrator,
+cursed-body,
+', 'common', 1 , 'true' ),
+(886, 'drakloak', '
+dragon,
+ghost,
+', '
+clear-body,
+infiltrator,
+cursed-body,
+', 'common', 1 , 'true' ),
+(887, 'dragapult', '
+dragon,
+ghost,
+', '
+clear-body,
+infiltrator,
+cursed-body,
+', 'common', 1 , 'true' ),
+(888, 'zacian-hero', '
+fairy,
+', '
+intrepid-sword,
+', 'common', 1 , 'true' ),
+(889, 'zamazenta-hero', '
+fighting,
+', '
+dauntless-shield,
+', 'common', 1 , 'true' ),
+(890, 'eternatus', '
+poison,
+dragon,
+', '
+pressure,
+', 'common', 1 , 'true' ),
+(891, 'kubfu', '
+fighting,
+', '
+inner-focus,
+', 'common', 1 , 'true' ),
+(892, 'urshifu-single-strike', '
+fighting,
+dark,
+', '
+unseen-fist,
+', 'common', 1 , 'true' ),
+(893, 'zarude', '
+dark,
+grass,
+', '
+leaf-guard,
+', 'common', 1 , 'true' ),
+(894, 'regieleki', '
+electric,
+', '
+transistor,
+', 'common', 1 , 'true' ),
+(895, 'regidrago', '
+dragon,
+', '
+dragons-maw,
+', 'common', 1 , 'true' ),
+(896, 'glastrier', '
+ice,
+', '
+chilling-neigh,
+', 'common', 1 , 'true' ),
+(897, 'spectrier', '
+ghost,
+', '
+grim-neigh,
+', 'common', 1 , 'true' ),
+(898, 'calyrex', '
+psychic,
+grass,
+', '
+unnerve,
+', 'common', 1 , 'true' );

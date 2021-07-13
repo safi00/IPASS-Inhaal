@@ -3,32 +3,30 @@ package nl.hu.IPASS.domain;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+
 @Entity
 public class Pokemon {
     @Id
     private int pokedexNumber;
     private String name;
-    private String type1;
-    private String type2;
+    private String typing;
     private int    generation;
     private String rarity;
     private String region;
-    private String ability1;
-    private String ability2;
-    private String hiddenAbility;
+    private String abilities;
+    private boolean hasHiddenAbility;
 
-    public Pokemon(int pokedexNumber, String name, String type1, String type2, int gen, String region, String rarity, String ability1, String ability2, String hiddenAbility){
-        this.pokedexNumber = pokedexNumber;
-        this.name          = name;
-        this.type1         = type1;
-        this.type2         = type2;
-        this.generation    = gen;
-        this.region        = region;
-        this.rarity        = rarity;
-        this.ability1      = ability1;
-        this.ability2      = ability2;
-        this.hiddenAbility = hiddenAbility;
+    public Pokemon(int pokedexNumber, String name, String typing, int gen, String region, String rarity, String abilities){
+        this.pokedexNumber    = pokedexNumber;
+        this.name             = name;
+        this.typing           = typing;
+        this.generation       = gen;
+        this.region           = region;
+        this.rarity           = rarity;
+        this.abilities        = abilities;
+        this.hasHiddenAbility = true;
     }
 
     public Pokemon() {
@@ -56,7 +54,10 @@ public class Pokemon {
     }
 
     public List<String> getTyping() {
+        String[] rawTypeList = typing.split(", ", 2);
         List<String> typings = new ArrayList<>();
+        String type1 = rawTypeList[0];
+        String type2 = rawTypeList[1];
         if (type2.equals("none")){
             typings.add(type1);
             return typings;
@@ -68,6 +69,9 @@ public class Pokemon {
     }
 
     public String getTypingString() {
+        String[] rawTypeList = typing.split(", ", 2);
+        String type1 = rawTypeList[0];
+        String type2 = rawTypeList[1];
         if (type2.equals("none")){
             return type1;
         }else {
@@ -76,60 +80,42 @@ public class Pokemon {
     }
 
     public String getAbility1() {
+        String[] rawAbilityList = abilities.split(", ", 3);
+        String ability1 = rawAbilityList[0];
         return ability1;
     }
 
     public String getAbility2() {
+        String ability2 = "";
+        String[] rawAbilityList = abilities.split(", ", 3);
+        if (rawAbilityList.length ==2 && !hasHiddenAbility || rawAbilityList.length == 3){
+            ability2 = rawAbilityList[1];
+        }
         return ability2;
     }
 
     public String getHiddenAbility() {
+        String hiddenAbility = "";
+        String[] rawAbilityList = abilities.split(", ", 3);
+        if (rawAbilityList.length ==2 && hasHiddenAbility || rawAbilityList.length == 3){
+            hiddenAbility = rawAbilityList[2];
+        }
         return hiddenAbility;
     }
 
     public List<String>  getAbilities(){
-        List<String> abilities = new ArrayList<>();
-        if (ability2.equals("none")){
-            if (hiddenAbility.equals("none")){
-                abilities.add(ability1);
-                return abilities;
-            }else {
-                abilities.add(ability1);
-                abilities.add(hiddenAbility);
-                return abilities;
-            }
-        }else{
-            if (hiddenAbility.equals("none")){
-                abilities.add(ability1);
-                abilities.add(ability2);
-                return abilities;
-            }else {
-                abilities.add(ability1);
-                abilities.add(ability2);
-                abilities.add(hiddenAbility);
-                return abilities;
-            }
-        }
+        List<String> abilitiesList = new ArrayList<>();
+        String[] rawAbilityList = abilities.split(", ", 3);
+        Collections.addAll(abilitiesList, rawAbilityList);
+        return abilitiesList;
     }
 
     public String getAbilitiesString(){
-        if (ability2.equals("none")){
-            if (hiddenAbility.equals("none")){
-                return ability1;
-            }else {
-                return ability1 + " hidden ability : " + hiddenAbility;
-            }
-        }else{
-            if (hiddenAbility.equals("none")){
-                return ability1 + " / " + ability2;
-            }else {
-                return ability1 + " / " + ability2 + " hidden ability: " + hiddenAbility;
-            }
-        }
+        return abilities;
     }
 
     @Override
     public String toString() {
-        return name + " a " + rarity + " type pokemon, with the type(s): " + getTypingString() + " from region: " + region + " from Generation: " + generation + " with ability(s): " + getAbilitiesString();
+        return name + " a " + rarity + " type pokemon, with the type(s): " + getTypingString() + " | from region: " + region + " from Generation: " + generation + " | with ability(s): " + getAbilitiesString() + " |";
     }
 }
