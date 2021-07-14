@@ -1,5 +1,7 @@
 package nl.hu.IPASS.domain;
 
+import net.minidev.json.annotate.JsonIgnore;
+
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import java.util.ArrayList;
@@ -10,18 +12,18 @@ import java.util.stream.Collectors;
 public class User extends Account{
     private String name;
     private String aboutMe;
+    @JsonIgnore
     @OneToMany(mappedBy = "owner")
     private List<OwnedPokemon> ownedPokemonList;
 
-    public User(String username, String password, String email, String accountType, String name) {
-        super(username, password, email, accountType);
+    public User(String username, String password, String email, String name) {
+        super(username, password, email, "user");
         this.name = name;
         this.aboutMe = "...";
         this.ownedPokemonList = new ArrayList<>();
     }
 
     public User() {
-
     }
 
     @Override
@@ -52,6 +54,21 @@ public class User extends Account{
     @Override
     public String getAccountType() {
         return super.getAccountType();
+    }
+
+    @Override
+    public String getRole() {
+        return null;
+    }
+
+    @Override
+    public Object getType() {
+        return getAccountType();
+    }
+
+    @Override
+    public Object build() {
+        return null;
     }
 
     @Override
@@ -127,13 +144,32 @@ public class User extends Account{
         return returnValue;
     }
 
+    @JsonIgnore
     public List<OwnedPokemon> getOwnedPokemonList() {
         return ownedPokemonList;
+    }
+
+    @JsonIgnore
+    public OwnedPokemon getOwnedPokemon(Pokemon pokemon) {
+        for (OwnedPokemon op : getOwnedPokemonList()){
+            if (op.getPokemon()==pokemon){
+                return op;
+            }
+        }
+        return null;
     }
 
     public List<OwnedPokemon> getFavoritePokemon() {
         return this.ownedPokemonList.stream().filter(OwnedPokemon::isFavourite).collect(Collectors.toList());
     }
+
+    public List<String> getProfileDetails(){
+        List<String> returnList = new ArrayList<>();
+        returnList.add(getName());
+        returnList.add(getAboutMe());
+        return returnList;
+    }
+
 
     public List<Pokemon> getPokemonList() {
         List<Pokemon> returnValue = new ArrayList<>();
@@ -147,6 +183,14 @@ public class User extends Account{
         List<Pokemon> returnValue = new ArrayList<>();
         for (OwnedPokemon pok : getFavoritePokemon()){
             returnValue.add(pok.getPokemon());
+        }
+        return returnValue;
+    }
+
+    public List<String> getFavoritePokemonStringList() {
+        List<String> returnValue = new ArrayList<>();
+        for (OwnedPokemon pok : getFavoritePokemon()){
+            returnValue.add(pok.getPokemon().getName());
         }
         return returnValue;
     }

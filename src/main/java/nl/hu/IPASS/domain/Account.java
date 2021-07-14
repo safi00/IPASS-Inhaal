@@ -23,9 +23,7 @@ public abstract class Account implements Principal {
     }
 
     public Account() {
-
     }
-
 
     public int getId() {
         return id;
@@ -37,6 +35,10 @@ public abstract class Account implements Principal {
 
     public boolean checkPassword(String password){
         return this.password.equals(password);
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public void setPassword(String password) {
@@ -58,4 +60,10 @@ public abstract class Account implements Principal {
     public String toString() {
         return "#" + id + " account type:" + accountType + " by user " + username + " can be contacted by " + email;
     }
+
+    public abstract String getRole();
+
+    public abstract Object getType();
+
+    public abstract Object build();
 }
