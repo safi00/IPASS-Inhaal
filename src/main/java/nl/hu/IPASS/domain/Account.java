@@ -64,4 +64,6 @@ public abstract class Account implements Principal {
     public abstract String getRole();
 
     public abstract Object getType();
+
+    public abstract Object build();
 }

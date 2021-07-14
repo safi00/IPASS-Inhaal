@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/op")
+@RequestMapping("/api")
 public class OwnedPokemonController {
     @Autowired
     private OwnedPokemonDAO ownedPokemonDAO;

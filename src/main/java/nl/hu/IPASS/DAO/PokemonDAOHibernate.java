@@ -88,12 +88,18 @@ public class PokemonDAOHibernate implements PokemonDAO {
 
     @Override
     public Pokemon getPokemonByName(String pokemonName) {
-        return null;
+        Session session = sessionFactory.openSession();
+        Pokemon pok = session.get(Pokemon.class, pokemonName);
+        session.close();
+        return pok;
     }
 
     @Override
     public Pokemon getPokemonByPokedexNumber(int id) {
-        return null;
+        Session session = sessionFactory.openSession();
+        Pokemon pok = session.get(Pokemon.class, id);
+        session.close();
+        return pok;
     }
 
     @Override

@@ -26,6 +26,11 @@ public class Employee extends Account{
         return getEmployeeType();
     }
 
+    @Override
+    public Object build() {
+        return null;
+    }
+
     public String getName() {
         return name;
     }

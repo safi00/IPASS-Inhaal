@@ -24,13 +24,12 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable()  // Geen csrf tbv postman login
-                .authorizeRequests().anyRequest().permitAll()
-                .and().exceptionHandling()
-                .authenticationEntryPoint((request, response, exception) -> response.sendError(401))
-                .and().formLogin()
-                .successHandler((request, response, authentication) -> response.sendError(200))
-                .failureHandler((request, response, authentication) -> response.sendError(401));
+        http.csrf().disable().formLogin().and() // Geen csrf tbv postman login
+                .authorizeRequests().antMatchers("/api/**").authenticated().anyRequest().permitAll();
+//                .and().exceptionHandling()
+//                .authenticationEntryPoint((request, response, exception) -> response.sendError(401));
+//                .successHandler((request, response, authentication) -> response.sendError(200))
+//                .failureHandler((request, response, authentication) -> response.sendError(401));
     }
 
     @Bean

@@ -9,6 +9,5 @@ public interface EmployeeDAO {
     boolean update(@NotNull Employee employee);
     boolean delete(@NotNull Employee employee);
     Employee getEmployeeByUsername(String username);
-    Employee getEmployeeByID(int id);
     List<Employee> getAllEmployees();
 }

@@ -88,12 +88,10 @@ public class EmployeeDAOHibernate implements EmployeeDAO {
 
     @Override
     public Employee getEmployeeByUsername(String username) {
-        return null;
-    }
-
-    @Override
-    public Employee getEmployeeByID(int id) {
-        return null;
+        Session session = sessionFactory.openSession();
+        Employee emp = session.get(Employee.class, username);
+        session.close();
+        return emp;
     }
 
     @Override

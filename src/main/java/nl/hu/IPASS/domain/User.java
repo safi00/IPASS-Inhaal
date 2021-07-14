@@ -67,6 +67,11 @@ public class User extends Account{
     }
 
     @Override
+    public Object build() {
+        return null;
+    }
+
+    @Override
     public int getId() {
         return super.getId();
     }
@@ -142,6 +147,16 @@ public class User extends Account{
     @JsonIgnore
     public List<OwnedPokemon> getOwnedPokemonList() {
         return ownedPokemonList;
+    }
+
+    @JsonIgnore
+    public OwnedPokemon getOwnedPokemon(Pokemon pokemon) {
+        for (OwnedPokemon op : getOwnedPokemonList()){
+            if (op.getPokemon()==pokemon){
+                return op;
+            }
+        }
+        return null;
     }
 
     public List<OwnedPokemon> getFavoritePokemon() {

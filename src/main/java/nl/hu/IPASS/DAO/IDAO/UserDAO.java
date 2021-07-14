@@ -8,6 +8,7 @@ public interface UserDAO {
     boolean save  (@NotNull User user);
     boolean update(@NotNull User user);
     boolean delete(@NotNull User user);
+    boolean isUserSaved(@NotNull User user);
     User getUserByUsername(String username);
     User getUserByID(int id);
     List<User> getAllUsers();
