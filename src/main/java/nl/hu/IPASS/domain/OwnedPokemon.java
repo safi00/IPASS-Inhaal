@@ -7,7 +7,7 @@ public class OwnedPokemon {
     @Id
     @GeneratedValue
     private int id;
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     private User owner;
     @ManyToOne(fetch = FetchType.EAGER)
     private Pokemon pokemon;

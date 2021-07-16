@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PokeCollector - Pokemon</title>
+    <link rel="stylesheet" href="../CSS/form.css">
+</head>
+<body>
+<div class="navbar">
+  <div class="bar">
+    <button id="home"         name="home"         class="bar-item"                 onclick="location.href='/index.html'"           type="button">Home</button>
+    <button id="navigation"   name="navigation"   class="bar-item"                 onclick="location.href='/HTML/navigation.html'" type="button">Navigation</button>
+    <button id="search-btn"   name="search-btn"   class="bar-item search-item"     onclick="location.href='/HTML/search.html'"     type="button">Search</button>
+    <button id="login-btn"    name="login-btn"    class="bar-item logoutButton"    onclick="location.href='/login'"                type="button">Login</button>
+    <button id="register-btn" name="register-btn" class="bar-item logoutButton"    onclick="location.href='/HTML/register.html'"   type="button">Register</button>
+    <button id="delete-btn"   name="delete-btn"   class="bar-item logoutButton">Delete</button>
+  </div>
+</div>
+<div id="header" style="padding:50px 16px">
+  <h1 class="jumbo" id="header-text">Add/Remove Pokemon</h1>
+</div>
+<div class="pokemon-dex">
+  <div id="container">
+    <div id="poke-container" class="ui cards">
+      <form id="POSTPokemonForm" method="post">
+        <input class="text" type="text"  id="pokemonName" name="pokemonName" placeholder="enter the pokemonName you want" required="">
+        <input class="text" type="text"  id="username" name="username" placeholder="enter the username you want give the pokemon to" required="">
+        <input type="button" value="Give pokemon" name="give" id="give">
+      </form>
+      <form id="DELETEPokemonForm" method="post">
+        <input class="text" type="text"  id="deletePokemonName" name="deletePokemonName" placeholder="enter the pokemonName you want to delete" required="">
+        <input class="text" type="text"  id="deleteUsername" name="deleteUsername" placeholder="enter the username you want delete the pokemon from" required="">
+        <input type="button" value="remove pokemon" name="delete" id="delete">
+      </form>
+      <form id="POSTPokemonFavForm" method="post">
+        <input class="text" type="text"  id="PokemonNameFav" name="deletePokemonName" placeholder="enter the pokemonName you want to delete" required="">
+        <input class="text" type="text"  id="UsernameFav" name="deleteUsername" placeholder="enter the username you want delete the pokemon from" required="">
+        <input type="button" value="add fav pokemon" name="fav" id="fav">
+      </form>
+      <form id="DELETEPokemonFavForm" method="post">
+        <input class="text" type="text"  id="deletePokemonNameFav" name="deletePokemonName" placeholder="enter the pokemonName you want to delete" required="">
+        <input class="text" type="text"  id="deleteUsernameFav" name="deleteUsername" placeholder="enter the username you want delete the pokemon from" required="">
+        <input type="button" value="remove fav pokemon" name="favDel" id="favDel">
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelector("#give").addEventListener("click", function(){
+    var formData = new FormData(document.querySelector("#POSTPokemonForm"));
+    var encData = new URLSearchParams(formData.entries());
+
+    fetch("/api/pokemon/add/", {
+      method: "POST", body: encData
+    })
+            .then(response => Promise.all([response.status, response.json()]))
+            .then(function ([status, myJson]) {
+              if (status == 200) {
+                alert('done')
+              } else {
+                console.log("status was " + status)
+              }
+            }).catch(error => console.log(error.message));
+  });
+  document.querySelector("#delete").addEventListener("click", function(){
+    var formData = new FormData(document.querySelector("#DELETEPokemonForm"));
+    var encData = new URLSearchParams(formData.entries());
+
+    fetch("/api/pokemon/remove/", {
+      method: "POST", body: encData
+    })
+            .then(response => Promise.all([response.status, response.json()]))
+            .then(function ([status, myJson]) {
+              if (status == 200) {
+                alert('done')
+              } else {
+                console.log("status was " + status)
+              }
+            }).catch(error => console.log(error.message));
+  });
+  document.querySelector("#fav").addEventListener("click", function(){
+    var formData = new FormData(document.querySelector("#POSTPokemonFavForm"));
+    var encData = new URLSearchParams(formData.entries());
+
+    fetch("/api/pokemon/addFav/", {
+      method: "POST", body: encData
+    })
+            .then(response => Promise.all([response.status, response.json()]))
+            .then(function ([status, myJson]) {
+              if (status == 200) {
+                alert('done')
+              } else {
+                console.log("status was " + status)
+              }
+            }).catch(error => console.log(error.message));
+  });
+  document.querySelector("#favDel").addEventListener("click", function(){
+    var formData = new FormData(document.querySelector("#DELETEPokemonFavForm"));
+    var encData = new URLSearchParams(formData.entries());
+
+    fetch("/api/pokemon/removeFav/", {
+      method: "POST", body: encData
+    })
+            .then(response => Promise.all([response.status, response.json()]))
+            .then(function ([status, myJson]) {
+              if (status == 200) {
+                alert('done')
+              } else {
+                console.log("status was " + status)
+              }
+            }).catch(error => console.log(error.message));
+  });
+</script>
+</body>
+</html>

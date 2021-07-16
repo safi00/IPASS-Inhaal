@@ -44,19 +44,20 @@ public class OwnedPokemonDAOHibernate implements OwnedPokemonDAO {
     }
 
     @Override
-    public void update(@NotNull OwnedPokemon pokeCol) {
+    public boolean update(@NotNull OwnedPokemon pokeCol) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         //noinspection TryFinallyCanBeTryWithResources
         try {
             session.update(pokeCol);
             transaction.commit();
+            return true;
         } catch (PersistenceException exception) {
             transaction.rollback();
             Throwable cause = exception.getCause();
             while (cause != null) {
                 if (cause instanceof ConstraintViolationException)
-                    return;
+                    return false;
                 cause = cause.getCause();
             }
             throw exception;
@@ -93,7 +94,7 @@ public class OwnedPokemonDAOHibernate implements OwnedPokemonDAO {
         Session session = sessionFactory.openSession();
         boolean returnBoolean = false;
         //noinspection unchecked
-        List<OwnedPokemon> ownedPokemon = session.createQuery("from ownedpokemon where owner_id = " + user.getId()).list();
+        List<OwnedPokemon> ownedPokemon = session.createQuery("from OwnedPokemon where owner = " + user.getId()).list();
         for (OwnedPokemon op : ownedPokemon){
             if (op.getPokemon() == pokemon) {
                 returnBoolean = true;
@@ -109,7 +110,7 @@ public class OwnedPokemonDAOHibernate implements OwnedPokemonDAO {
         Session session = sessionFactory.openSession();
         boolean returnBoolean = false;
         //noinspection unchecked
-        List<OwnedPokemon> ownedPokemon = session.createQuery("from ownedpokemon where owner_id = " + user.getId()).list();
+        List<OwnedPokemon> ownedPokemon = session.createQuery("from OwnedPokemon where owner = " + user.getId()).list();
         for (OwnedPokemon op : ownedPokemon){
             if (op.getPokemon() == pokemon && op.isFavourite()) {
                 returnBoolean = true;
@@ -125,9 +126,9 @@ public class OwnedPokemonDAOHibernate implements OwnedPokemonDAO {
         Session session = sessionFactory.openSession();
         OwnedPokemon returnValue = null;
         //noinspection unchecked
-        List<OwnedPokemon> ownedPokemon = session.createQuery("from ownedpokemon where owner_id = " + user.getId() + " and pokemon_pokedexnumber = " + pokemon.getPokedexNumber()).list();
-        for (OwnedPokemon op : ownedPokemon){
-            if (op.getPokemon() == pokemon && op.getOwner() == user){
+        List<OwnedPokemon> ownedPokemon = session.createQuery("from OwnedPokemon where owner = " + user.getId() + " and pokemon = " + pokemon.getPokedexNumber()).list();
+        for (OwnedPokemon op : getAllOwnedPokemon()){
+            if (op.getPokemon().getPokedexNumber() == pokemon.getPokedexNumber() && op.getOwner().getId() == user.getId()){
                returnValue = op;
             }
         }
@@ -139,7 +140,7 @@ public class OwnedPokemonDAOHibernate implements OwnedPokemonDAO {
     public List<OwnedPokemon> getAllOwnedPokemonByPokemon(Pokemon pokemon) {
         Session session = sessionFactory.openSession();
         //noinspection unchecked
-        List<OwnedPokemon> ownedPokemon = session.createQuery("from ownedpokemon where pokemon_pokedexnumber = " + pokemon.getPokedexNumber()).list();
+        List<OwnedPokemon> ownedPokemon = session.createQuery("from OwnedPokemon where pokemon = " + pokemon.getPokedexNumber()).list();
         session.close();
         return ownedPokemon;
     }
@@ -148,7 +149,7 @@ public class OwnedPokemonDAOHibernate implements OwnedPokemonDAO {
     public List<OwnedPokemon> getAllOwnedPokemonByUser(User user) {
         Session session = sessionFactory.openSession();
         //noinspection unchecked
-        List<OwnedPokemon> ownedPokemon = session.createQuery("from ownedpokemon where owner_id =" + user.getId()).list();
+        List<OwnedPokemon> ownedPokemon = session.createQuery("from OwnedPokemon where owner =" + user.getId()).list();
         session.close();
         return ownedPokemon;
     }
@@ -157,7 +158,7 @@ public class OwnedPokemonDAOHibernate implements OwnedPokemonDAO {
     public List<OwnedPokemon> getAllFavPokemonByUser(User user) {
         Session session = sessionFactory.openSession();
         //noinspection unchecked
-        List<OwnedPokemon> ownedPokemon = session.createQuery("from ownedpokemon where owner_id =" + user.getId() + " and isfavourite = true").list();
+        List<OwnedPokemon> ownedPokemon = session.createQuery("from OwnedPokemon where owner =" + user.getId() + " and isFavourite = true").list();
         session.close();
         return ownedPokemon;
     }
@@ -167,7 +168,7 @@ public class OwnedPokemonDAOHibernate implements OwnedPokemonDAO {
     public List<OwnedPokemon> getAllOwnedPokemon() {
         Session session = sessionFactory.openSession();
         //noinspection unchecked
-        List<OwnedPokemon> ownedPokemon = session.createQuery("from ownedpokemon").list();
+        List<OwnedPokemon> ownedPokemon = session.createQuery("from OwnedPokemon").list();
         session.close();
         return ownedPokemon;
     }

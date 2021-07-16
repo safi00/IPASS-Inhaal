@@ -25,7 +25,7 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable().formLogin().and() // Geen csrf tbv postman login
-                .authorizeRequests().antMatchers("/api/**").authenticated().anyRequest().permitAll();
+                .authorizeRequests().antMatchers("api/api/**").authenticated().anyRequest().permitAll();
 //                .and().exceptionHandling()
 //                .authenticationEntryPoint((request, response, exception) -> response.sendError(401));
 //                .successHandler((request, response, authentication) -> response.sendError(200))

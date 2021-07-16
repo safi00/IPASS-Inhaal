@@ -7,15 +7,23 @@ import nl.hu.IPASS.DAO.IDAO.UserDAO;
 import nl.hu.IPASS.domain.Employee;
 import nl.hu.IPASS.domain.Pokemon;
 import nl.hu.IPASS.domain.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class PokeColManager {
     //    public static final boolean debugMode = false;
     private static final PokeColManager pcm = new PokeColManager();
+
+    @Autowired
     private UserDAO uDao;
+    @Autowired
     private EmployeeDAO eDao;
+    @Autowired
     private PokemonDAO pDao;
+    @Autowired
     private OwnedPokemonDAO oDao;
 
     public static PokeColManager getInstance() {
@@ -24,8 +32,8 @@ public class PokeColManager {
 
     public User createUser(String username, String password, String email, String name){
         User newUser = new User(username, password, email, name);
-        uDao.save(newUser);
-        return uDao.getUserByUsername(username);
+        this.uDao.save(newUser);
+        return this.uDao.getUserByUsername(username);
     }
 
     public boolean changePassword(User user, String oldPassword, String newPassword){

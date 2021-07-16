@@ -1,14 +1,13 @@
 package nl.hu.IPASS.DAO.IDAO;
 
 import nl.hu.IPASS.domain.User;
-import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 public interface UserDAO {
-    boolean save  (@NotNull User user);
-    boolean update(@NotNull User user);
-    boolean delete(@NotNull User user);
-    boolean isUserSaved(@NotNull User user);
+    boolean save  (User user);
+    boolean update(User user);
+    boolean delete(User user);
+    boolean isUserSaved(User user);
     User getUserByUsername(String username);
     User getUserByID(int id);
     List<User> getAllUsers();

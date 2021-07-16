@@ -2,6 +2,7 @@ package nl.hu.IPASS.DAO;
 
 import nl.hu.IPASS.DAO.IDAO.EmployeeDAO;
 import nl.hu.IPASS.domain.Employee;
+import nl.hu.IPASS.domain.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -89,16 +90,21 @@ public class EmployeeDAOHibernate implements EmployeeDAO {
     @Override
     public Employee getEmployeeByUsername(String username) {
         Session session = sessionFactory.openSession();
-        Employee emp = session.get(Employee.class, username);
+        Employee returnEmp = null;
+        for (Employee emp : getAllEmployees()){
+            if (emp.getUsername().equals(username)){
+                returnEmp = emp;
+            }
+        }
         session.close();
-        return emp;
+        return returnEmp;
     }
 
     @Override
     public List<Employee> getAllEmployees() {
         Session session = sessionFactory.openSession();
         //noinspection unchecked
-        List<Employee> employees = session.createQuery("from employee").list();
+        List<Employee> employees = session.createQuery("from Employee ").list();
         session.close();
         return employees;
     }

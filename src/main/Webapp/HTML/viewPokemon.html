@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PokeCollector - View</title>
+    <link href="../CSS/form.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar">
+    <div class="bar">
+
+        <button class="bar-item" id="home" name="home" onclick="location.href='/index.html'" type="button">Home</button>
+        <button class="bar-item" id="navigation" name="navigation" onclick="location.href='/HTML/navigation.html'"
+                type="button">Navigation
+        </button>
+        <button class="bar-item search-item" id="search-btn" name="search-btn"
+                onclick="location.href='/HTML/search.html'" type="button">Search
+        </button>
+        <button class="bar-item logoutButton" id="login-btn" name="login-btn" onclick="location.href='/login'"
+                type="button">Login
+        </button>
+        <button class="bar-item logoutButton" id="register-btn" name="register-btn"
+                onclick="location.href='/HTML/register.html'" type="button">Register
+        </button>
+        <button class="bar-item logoutButton" id="delete-btn" name="delete-btn">Delete</button>
+    </div>
+</div>
+<div id="header" style="padding:50px 16px">
+    <h1 class="jumbo" id="header-text">View Pokemon</h1>
+</div>
+<div class="pokemon-dex">
+    <div id="container">
+        <div id="poke-container" class="ui cards">
+            <form id="GETPokemonForm" method="post">
+                <input class="text" type="text"  id="username" name="username" placeholder="enter the username you want see the pokemon of" required="">
+                <input type="button" value="pokemon" name="get" id="get">
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelector("#get").addEventListener("click", function(){
+        var formData = new FormData(document.querySelector("#GETPokemonForm"));
+        var encData = new URLSearchParams(formData.entries());
+
+        fetch("/api/pokemon/view/", {
+            method: "POST", body: encData
+        })
+            .then(response => Promise.all([response.status, response.json()]))
+            .then(function ([status, myJson]) {
+                if (status == 200) {
+                    alert(JSON.stringify(myJson))
+                } else {
+                    console.log("status was " + status)
+                }
+            }).catch(error => console.log(error.message));
+    });
+</script>
+</body>
+</html>

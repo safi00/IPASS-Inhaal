@@ -14,6 +14,10 @@ import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import javax.persistence.EntityNotFoundException;
+import javax.ws.rs.FormParam;
+import javax.ws.rs.POST;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @SuppressWarnings("ThrowablePrintedToSystemOut")
@@ -24,19 +28,69 @@ public class UserController {
     @Autowired
     private UserDAO userDao;
 
-    @GetMapping("/user/create/")
-    public Response register(@RequestParam String username,
-                             @RequestParam String password,
-                             @RequestParam String email,
-                             @RequestParam String name){
+    @PostMapping("/user/create/")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response register(@FormParam("username") String username,
+                             @FormParam("password") String password,
+                             @FormParam("email") String email,
+                             @FormParam("name") String name){
     try{
-        if (!username.isBlank() && !password.isBlank() && !email.isBlank() && !name.isBlank()){
-            User user = PokeColManager.getInstance().createUser(username, password, email, name);
-            if (!(user ==null)) {
-                User getUser = PokeColManager.getInstance().getUserByName(user.getUsername());
-                return Response.ok(getUser).build();
-            }
+        if (!username.isEmpty() && !password.isEmpty() && !email.isEmpty() && !name.isEmpty()){
+            User newUser = new User(username, password, email, name);
+            userDao.save(newUser);
+            return Response.ok(userDao.getUserByUsername(newUser.getUsername())).build();
         }
+        }catch (Exception e){
+            System.out.println(e);
+            return Response.status(Response.Status.NOT_FOUND).entity(new AbstractMap.SimpleEntry<>("message", "params are not fully filled out!")).build();
+        }
+        return Response.status(Response.Status.NOT_FOUND).entity(new AbstractMap.SimpleEntry<>("message", "params are not fully filled out!")).build();
+    }
+
+    @PostMapping("/user/change/")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response changeUserInfo(@FormParam("username") String username,
+                                   @FormParam("password") String password,
+                                   @FormParam("name") String name,
+                                   @FormParam("userAboutMe") String userAboutMe,
+                                   @FormParam("userEmail") String userEmail){
+        try{
+            if (!username.isEmpty() && !password.isEmpty() && !name.isEmpty() && !userAboutMe.isEmpty() && !userEmail.isEmpty()){
+                User user = userDao.getUserByUsername(username);
+                if (!(user == null)){
+                    if (user.checkPassword(password)){
+                        user.setName(name);
+                        user.setEmail(userEmail);
+                        user.setAboutMe(userAboutMe);
+                        return Response.ok(userDao.update(user)).build();
+                    }
+                }
+            }
+        }catch (Exception e){
+            System.out.println(e);
+            return Response.status(Response.Status.NOT_FOUND).entity(new AbstractMap.SimpleEntry<>("message", "params are not fully filled out!")).build();
+        }
+        return Response.status(Response.Status.NOT_FOUND).entity(new AbstractMap.SimpleEntry<>("message", "params are not fully filled out!")).build();
+    }
+
+    @PostMapping("/user/passChange/")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response changePassword(@FormParam("username") String username,
+                                   @FormParam("oldPassword") String oldPassword,
+                                   @FormParam("newPassword1") String newPassword1,
+                                   @FormParam("newPassword2") String newPassword2){
+        try{
+            if (!username.isEmpty() && !oldPassword.isEmpty() && !newPassword1.isEmpty() && !newPassword2.isEmpty()){
+                User user = userDao.getUserByUsername(username);
+                if (!(user == null)){
+                    if (user.checkPassword(oldPassword)){
+                        if (newPassword1.equals(newPassword2)){
+                            user.setPassword(newPassword1);
+                            return Response.ok(userDao.update(user)).build();
+                        }
+                    }
+                }
+            }
         }catch (Exception e){
             System.out.println(e);
             return Response.status(Response.Status.NOT_FOUND).entity(new AbstractMap.SimpleEntry<>("message", "params are not fully filled out!")).build();
@@ -72,7 +126,7 @@ public class UserController {
     }
 
     @DeleteMapping("/user/delete/{username}")
-    public void cancelVlucht(@PathVariable String username) {
+    public void deleteUser(@PathVariable String username) {
         User user = userDao.getUserByUsername(username);
         if (user == null)
             throw new EntityNotFoundException("User with username " + username + " not found!");

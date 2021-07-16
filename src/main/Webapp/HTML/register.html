@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PokeCollector - Registration</title>
+    <link rel="stylesheet" href="../CSS/form.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="bar">
+        <button id="home"         name="home"         class="bar-item"                 onclick="location.href='/index.html'"           type="button">Home</button>
+        <button id="navigation"   name="navigation"   class="bar-item"                 onclick="location.href='/HTML/navigation.html'" type="button">Navigation</button>
+        <button id="search-btn"   name="search-btn"   class="bar-item search-item"     onclick="location.href='/HTML/search.html'"     type="button">Search</button>
+        <button id="login-btn"    name="login-btn"    class="bar-item logoutButton"    onclick="location.href='/login'"                type="button">Login</button>
+        <button id="register-btn" name="register-btn" class="bar-item logoutButton"    onclick="location.href='/HTML/register.html'"   type="button">Register</button>
+        <button id="delete-btn"   name="delete-btn"   class="bar-item logoutButton">Delete</button>
+    </div>
+</div>
+<div id="header" style="padding:50px 16px">
+    <h1 class="jumbo" id="header-text">Register</h1>
+</div>
+<div class="pokemon-dex">
+    <div id="container">
+        <div id="poke-container" class="ui cards">
+            <form id="POSTRegisterForm" method="post">
+                <input class="text" type="text"      id="username" name="username" placeholder="enter the username you want to use" required="">
+                <input class="text" type="password"  id="password" name="password" placeholder="enter the password you want to use" required="">
+                <input class="text" type="text"      id="email" name="email" placeholder="enter the email you want use" required="">
+                <input class="text" type="text"      id="name" name="name" placeholder="enter the name you want" required="">
+                <input type="button" value="register" name="register" id="register">
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelector("#register").addEventListener("click", function(){
+        var formData = new FormData(document.querySelector("#POSTRegisterForm"));
+        var encData = new URLSearchParams(formData.entries());
+
+        fetch("/api/user/create/", {
+            method: "POST", body: encData
+        })
+            .then(response => Promise.all([response.status, response.json()]))
+            .then(function ([status, myJson]) {
+                if (status == 200) {
+                    alert(myJson)
+                } else {
+                    console.log("status was " + status)
+                }
+            }).catch(error => console.log(error.message));
+    });
+</script>
+</body>
+</html>
