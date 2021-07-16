@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface OwnedPokemonDAO {
     boolean save  (@NotNull OwnedPokemon ownedPokemon);
-    void update(@NotNull OwnedPokemon ownedPokemon);
+    boolean update(@NotNull OwnedPokemon ownedPokemon);
     boolean delete(@NotNull OwnedPokemon ownedPokemon);
     boolean doesUserOwnPokemon(@NotNull User user, Pokemon pokemon);
     boolean doesUserHavePokemonInFav(@NotNull User user, Pokemon pokemon);

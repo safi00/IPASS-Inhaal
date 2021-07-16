@@ -2,6 +2,7 @@ package nl.hu.IPASS.DAO;
 
 import nl.hu.IPASS.DAO.IDAO.UserDAO;
 import nl.hu.IPASS.domain.OwnedPokemon;
+import nl.hu.IPASS.domain.Pokemon;
 import nl.hu.IPASS.domain.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

@@ -2,6 +2,7 @@ package nl.hu.IPASS.DAO;
 
 import nl.hu.IPASS.DAO.IDAO.PokemonDAO;
 import nl.hu.IPASS.domain.Pokemon;
+import nl.hu.IPASS.domain.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -89,9 +90,14 @@ public class PokemonDAOHibernate implements PokemonDAO {
     @Override
     public Pokemon getPokemonByName(String pokemonName) {
         Session session = sessionFactory.openSession();
-        Pokemon pok = session.get(Pokemon.class, pokemonName);
+        Pokemon returnPok = null;
+        for (Pokemon pok : getAllPokemon()){
+            if (pok.getName().equals(pokemonName)){
+                returnPok = pok;
+            }
+        }
         session.close();
-        return pok;
+        return returnPok;
     }
 
     @Override
@@ -106,7 +112,7 @@ public class PokemonDAOHibernate implements PokemonDAO {
     public List<Pokemon> getAllPokemon() {
         Session session = sessionFactory.openSession();
         //noinspection unchecked
-        List<Pokemon> pokemon = session.createQuery("from pokemon").list();
+        List<Pokemon> pokemon = session.createQuery("from Pokemon").list();
         session.close();
         return pokemon;
     }

@@ -67,7 +67,7 @@ h1, .descriptionMarble{
     padding: 3em;
 }
 
-input[type="text"]{
+input[type="text"], input[type="password"]{
     font-size: 0.9em;
     font-weight: bold;
     color: rgb(0, 0, 0);
@@ -271,19 +271,8 @@ input[type="submit"]:hover, input[type="button"]:hover {
     margin: auto;
     width: 90%;
     padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     gap: 0 0;
-    grid-template-areas:
-      "Nothing-Left GlobalDexButton Nothing-Right"
-      ". . ."
-      ". . .";
   }
-  .GlobalDexButton { grid-area: GlobalDexButton; }
-  .Nothing-Right { grid-area: Nothing-Right; }
-  .Nothing-Left { grid-area: Nothing-Left; }
-
   #search-container {
     margin: auto;
     width: 90%;
@@ -291,9 +280,6 @@ input[type="submit"]:hover, input[type="button"]:hover {
   }
   .container {
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     gap: 0 0;
   }
 
@@ -336,7 +322,6 @@ input[type="submit"]:hover, input[type="button"]:hover {
     border:none;
     display:block;
     outline:0;
-    grid-area: GlobalDexButton;
     margin: 0 auto;
     font-weight: 900;
     white-space:normal;
@@ -357,5 +342,4 @@ input[type="submit"]:hover, input[type="button"]:hover {
     margin: 0 auto;
     color:#000;
     background-color:rgba(43, 61, 57, 0.719);
-    grid-area: Button;
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PokeCollector-User Management page</title>
+  <link href="../CSS/form.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<div class="navbar">
+  <div class="bar">
+    <button id="home"         name="home"         class="bar-item"                 onclick="location.href='/index.html'"           type="button">Home</button>
+    <button id="navigation"   name="navigation"   class="bar-item"                 onclick="location.href='/HTML/navigation.html'" type="button">Navigation</button>
+    <button id="search-btn"   name="search-btn"   class="bar-item search-item"     onclick="location.href='/HTML/search.html'"     type="button">Search</button>
+    <button id="login-btn"    name="login-btn"    class="bar-item logoutButton"    onclick="location.href='/login'"                type="button">Login</button>
+    <button id="register-btn" name="register-btn" class="bar-item logoutButton"    onclick="location.href='/HTML/register.html'"   type="button">Register</button>
+    <button id="delete-btn"   name="delete-btn"   class="bar-item logoutButton">Delete</button>
+  </div>
+</div>
+<div id="header" style="padding:50px 16px">
+  <h1 class="jumbo" id="header-text">User Management page</h1>
+</div>
+<div class="pokemon-dex">
+  <div id="container">
+    <div id="poke-container" class="ui cards">
+      <form id="POSTUserManageForm" method="post">
+        <input class="text" type="text"  id="employeeUsername" name="employeeUsername" placeholder="enter the employee username" required="">
+        <input class="text" type="password"  id="employeePassword" name="employeePassword" placeholder="enter the employee password" required="">
+        <input class="text" type="text"  id="userUsername" name="userUsername" placeholder="enter the user username that you want to change" required="">
+        <input class="text" type="text"  id="userName" name="userName" placeholder="enter the user's new name" required="">
+        <input class="text" type="text"  id="userAboutMe" name="userAboutMe" placeholder="enter the user's new AboutMe" required="">
+        <input class="text" type="text"  id="userEmail" name="userEmail" placeholder="enter the user's new Email" required="">
+        <input type="button" value="change user" name="change" id="change">
+      </form>
+
+      <form id="DELETEUserManageForm" method="post">
+        <input class="text" type="text"  id="employeeUsername1" name="employeeUsername" placeholder="enter the employee username" required="">
+        <input class="text" type="password"  id="employeePassword1" name="employeePassword" placeholder="enter the employee password" required="">
+        <input class="text" type="text"  id="userUsername1" name="userUsername" placeholder="enter the user username that you want to change" required="">
+        <input type="button" value="delete user" name="delete" id="delete">
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelector("#change").addEventListener("click", function(){
+    var formData = new FormData(document.querySelector("#POSTUserManageForm"));
+    var encData = new URLSearchParams(formData.entries());
+
+    fetch("/api/emp/change/", {
+      method: "POST", body: encData
+    })
+            .then(response => Promise.all([response.status, response.json()]))
+            .then(function ([status, myJson]) {
+              if (status == 200) {
+                alert(myJson)
+              } else {
+                console.log("status was " + status)
+              }
+            }).catch(error => console.log(error.message));
+  });
+  document.querySelector("#delete").addEventListener("click", function(){
+    var formData = new FormData(document.querySelector("#DELETEUserManageForm"));
+    var encData = new URLSearchParams(formData.entries());
+
+    fetch("/api/emp/remove/", {
+      method: "POST", body: encData
+    })
+            .then(response => Promise.all([response.status, response.json()]))
+            .then(function ([status, myJson]) {
+              if (status == 200) {
+                alert(myJson)
+              } else {
+                console.log("status was " + status)
+              }
+            }).catch(error => console.log(error.message));
+  });
+</script>
+</body>
+</html>

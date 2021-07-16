@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PokeCollector-Navigation page</title>
+    <link rel="stylesheet" href="../CSS/form.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="bar">
+        <button id="home"         name="home"         class="bar-item"                 onclick="location.href='/index.html'"         type="button">Home</button>
+        <button id="search-btn"   name="search-btn"   class="bar-item search-item"     onclick="location.href='/HTML/search.html'"   type="button">Search</button>
+        <button id="login-btn"    name="login-btn"    class="bar-item logoutButton"    onclick="location.href='/login'"              type="button">Login</button>
+        <button id="register-btn" name="register-btn" class="bar-item logoutButton"    onclick="location.href='/HTML/register.html'" type="button">Register</button>
+    </div>
+</div>
+<div id="header" style="padding:50px 16px">
+    <h1 class="jumbo" id="header-text">Navigation</h1>
+</div>
+<div class="pokemon-dex">
+    <div id="container">
+        <div id="poke-container" class="ui cards">
+            <div class="Button">
+<!--                <button id="view-btn"        name="view-btn"        class="globalButton" onclick="location.href='/HTML/viewPokemon.html'" type="button">View Pokemon</button>-->
+                <button id="update-btn"      name="update-btn"      class="globalButton" onclick="location.href='/HTML/update.html'" type="button">Update User Profile</button>
+<!--                <button id="profile-btn"     name="profile-btn"     class="globalButton" onclick="location.href='/HTML/profile.html'" type="button">View Profile</button>-->
+                <button id="pokemon-btn"     name="pokemon-btn"     class="globalButton" onclick="location.href='/HTML/pokemon.html'" type="button">ADD/Remove Pokemon</button>
+                <button id="password-btn"    name="password-btn"    class="globalButton" onclick="location.href='/HTML/password.html'" type="button">Update password</button>
+                <button id="manageUsers-btn" name="manageUsers-btn" class="globalButton" onclick="location.href='/HTML/manageUsers.html'" type="button">Manage Users</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

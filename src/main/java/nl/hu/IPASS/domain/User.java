@@ -3,6 +3,7 @@ package nl.hu.IPASS.domain;
 import net.minidev.json.annotate.JsonIgnore;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +13,7 @@ import java.util.stream.Collectors;
 public class User extends Account{
     private String name;
     private String aboutMe;
-    @JsonIgnore
-    @OneToMany(mappedBy = "owner")
+    @OneToMany(mappedBy = "owner", fetch = FetchType.EAGER)
     private List<OwnedPokemon> ownedPokemonList;
 
     public User(String username, String password, String email, String name) {
